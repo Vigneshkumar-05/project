@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.separator::after {
+    content: "";
+    height: 5rem;
+    margin-left: 1rem;
+    border: 1px solid white;
+}
+
+.icon-styles {
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.icon-container-style:hover {
+    background-color: #ebebeb;
+    border-radius: 0.5rem;
+}

@@ -1,13 +1,20 @@
 import { useState } from "react";
 import NavItems from "./NavItems";
 
+declare global {
+  interface Window {
+    navigationApi: {
+      openScriptWindow: () => void;
+    };
+  }
+}
+
 function Navigation(): JSX.Element {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
   function handleOpenDropdown(index: number) {
     setActiveDropdown(index);
   }
-
   function handleCloseDropdown() {
     setActiveDropdown(null);
   }
@@ -37,8 +44,7 @@ function Navigation(): JSX.Element {
                     key={index}
                     className="px-4 py-2 block cursor-pointer hover:bg-gray-200"
                     onClick={() => {
-                      // respective functional
-
+                      data.action();
                       handleCloseDropdown();
                     }}
                   >

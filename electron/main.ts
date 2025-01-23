@@ -1,44 +1,41 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
+
+
+const childWin = require("./src/childWindow");
 
 let mainWindow: typeof BrowserWindow | null = null;
 
-const createWindow = () => {
+function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     show: false,
     autoHideMenuBar: true,
-    webPreference: {
+    webPreferences: {
       preload: path.join(__dirname, "preload.js"),
+      contextIsolation: true,
     },
   });
 
-  try {
-    if (!mainWindow) {
-      throw "Main window is null";
-    }
+  console.log(__dirname);
+  // update build directory
+  const startURL = process.env.isDev
+    ? "http://localhost:5173"
+    : `file://${path.join(__dirname, "..build-dir")}`;
+  mainWindow.loadURL(startURL);
 
-    // update build directory
-    const startURL = process.env.isDev
-      ? "http://localhost:5173"
-      : `file://${path.join(__dirname, "..build-dir")}`;
-    mainWindow.loadURL(startURL);
+  // Open the DevTools.
+  mainWindow.webContents.openDevTools();
 
-    // Open the DevTools.
-    mainWindow.webContents.openDevTools();
+  mainWindow.once("ready-to-show", () => {
+    mainWindow.show();
+    mainWindow.maximize();
+  });
 
-    mainWindow.once("ready-to-show", () => {
-      mainWindow.show();
-      mainWindow.maximize();
-    });
-
-    mainWindow.on("closed", () => {
-      mainWindow = null;
-    });
-  } catch (err) {
-    console.log(err);
-  }
+  mainWindow.on("closed", () => {
+    mainWindow = null;
+  });
 };
 
 app.whenReady().then(() => {
@@ -55,4 +52,11 @@ app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     app.quit();
   }
+});
+
+ipcMain.on("open-script-window", () => {
+  if (!mainWindow) {
+    throw new Error("Main window is not defined");
+  }
+  childWin(mainWindow);
 });

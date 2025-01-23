@@ -1,9 +1,7 @@
+// import DeviceSelector from "../components/DeviceSelector";
+
 function Home(): JSX.Element {
-  return (
-    <div>
-      <p>Home</p>
-    </div>
-  );
+  return <div>{/* <DeviceSelector /> */}</div>;
 }
 
 export default Home;

@@ -1,7 +1,9 @@
+import DeviceSelector from "../components/DeviceSelector";
+
 function Home(): JSX.Element {
   return (
     <div>
-      <p>Home</p>
+      <DeviceSelector />
     </div>
   );
 }

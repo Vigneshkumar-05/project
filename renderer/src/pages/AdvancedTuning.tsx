@@ -1,5 +1,5 @@
-function AdvancedTuning(): JSX.Element {
+const AdvancedTuning: React.FunctionComponent = () => {
   return <div>AdvancedTuning</div>;
-}
+};
 
 export default AdvancedTuning;

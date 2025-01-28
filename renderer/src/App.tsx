@@ -16,7 +16,7 @@ const App: React.FunctionComponent = () => {
   return (
     <DeviceContextProvider>
       <BrowserRouter>
-        <div className="max-w-screen min-h-screen grid grid-rows-[3.5rem_1fr] grid-cols-[3rem_1fr] bg-[#f9f9f9]">
+        <div className="max-w-screen min-h-screen grid grid-rows-[3rem_1fr] grid-cols-[2.5rem_1fr] bg-[#f9f9f9]">
           <Navigation />
           <Sidebar />
           <Routes>

@@ -1,15 +1,14 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 
-
 const childWin = require("./src/childWindow");
 
 let mainWindow: typeof BrowserWindow | null = null;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    minWidth: 1024,
-    minHeight: 720,
+    minWidth: 1280,
+    minHeight: 680,
     show: false,
     autoHideMenuBar: true,
     webPreferences: {
@@ -53,6 +52,9 @@ app.on("window-all-closed", () => {
     app.quit();
   }
 });
+
+
+// IPC
 
 ipcMain.on("open-script-window", () => {
   if (!mainWindow) {

@@ -1,4 +1,4 @@
-import DeviceSelector from "../components/DeviceSelector";
+import DeviceSelector from "../components/DeviceSelector/DeviceSelector";
 import HomeFeaturesList from "../components/HomeFeaturesList";
 import About from "../components/About";
 
@@ -7,9 +7,11 @@ const Home: React.FunctionComponent = () => {
     <div className="min-w-fit flex justify-between">
       <section className="min-h-[90%] w-[55%] flex flex-col">
         <DeviceSelector />
-        <HomeFeaturesList />
+        <div className="h-[40%] flex items-center">
+          <HomeFeaturesList />
+        </div>
       </section>
-      <section className="w-[50%]">
+      <section className="w-[50%] flex items-center">
         <About />
       </section>
     </div>

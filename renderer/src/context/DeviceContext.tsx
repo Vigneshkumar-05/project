@@ -5,19 +5,19 @@ type DeviceContextProviderPropsType = {
 };
 
 type ContextType = {
-  deviceName: string | undefined;
-  setDeviceName: React.Dispatch<React.SetStateAction<string | undefined>>;
+  deviceName: string;
+  setDeviceName: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const DeviceContext = createContext<ContextType>({
-  deviceName: undefined,
+  deviceName: "",
   setDeviceName: () => undefined,
 });
 
 const DeviceContextProvider: React.FunctionComponent<
   DeviceContextProviderPropsType
 > = ({ children }) => {
-  const [deviceName, setDeviceName] = useState<string | undefined>(undefined);
+  const [deviceName, setDeviceName] = useState<string>("");
 
   return (
     <DeviceContext.Provider value={{ deviceName, setDeviceName }}>

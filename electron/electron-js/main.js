@@ -5,8 +5,8 @@ const childWin = require("./src/childWindow");
 let mainWindow = null;
 function createWindow() {
     mainWindow = new BrowserWindow({
-        minWidth: 1024,
-        minHeight: 720,
+        minWidth: 1280,
+        minHeight: 680,
         show: false,
         autoHideMenuBar: true,
         webPreferences: {
@@ -44,6 +44,7 @@ app.on("window-all-closed", () => {
         app.quit();
     }
 });
+// IPC
 ipcMain.on("open-script-window", () => {
     if (!mainWindow) {
         throw new Error("Main window is not defined");

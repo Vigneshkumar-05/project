@@ -7,6 +7,7 @@ function childWindow(parentWindow: typeof BrowserWindow) {
         childWindow = new BrowserWindow({
             width: 600,
             height: 600,
+            focus: true,
             parent: parentWindow,
             name: "childWindow",
             minimizable: false,

@@ -1,3 +1,5 @@
+@import url("./utils/font.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,12 +11,68 @@
     border: 1px solid white;
 }
 
-.icon-styles {
-    padding: 0.2rem;
-    cursor: pointer;
+.icon-container-style:hover {
+    border-radius: 0.2rem;
+    background-color: #ebebeb;
 }
 
-.icon-container-style:hover {
-    background-color: #ebebeb;
-    border-radius: 0.5rem;
+.icon-styles:active {
+    border-radius: 0.2rem;
+    background-color: #dadada;
+    transition: background-color 0.5s ease;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-underline::after {
+    content: "";
+    display: flex;
+    width: 3.6rem;
+    border: 1px solid #c00;
+}
+
+.featurelist-hover p,
+.icon {
+    color: rgb(95, 92, 92);
+    transition: color 0.3s ease-in-out;
+}
+
+.featurelist-hover:hover p,
+.featurelist-hover:hover .icon {
+    color: #189;
+}
+
+.featurelist-hover {
+    box-shadow: 1px 1px 1px 0 #0003;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.featurelist-hover:hover {
+    outline: none;
+    box-shadow: 6px 6px 6px 0 #0003;
+}
+
+.rotate-icon {
+    transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #c00;
+    border-radius: 100vh;
 }

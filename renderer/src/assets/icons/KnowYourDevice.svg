@@ -1,0 +1,1981 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="MCF8315_SBD.svg"
+   id="svg588"
+   version="1.1"
+   class="st42"
+   color-interpolation-filters="sRGB"
+   xml:space="preserve"
+   viewBox="0 0 436.20069 238.241"
+   height="3.3089027in"
+   width="6.0583429in"><metadata
+   id="metadata592"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   id="namedview590"
+   inkscape:window-height="480"
+   inkscape:window-width="640"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+	<v:documentProperties
+   v:viewMarkup="false"
+   v:langID="1033">
+		<v:userDefs>
+			<v:ud
+   v:val="VT0(1):26"
+   v:nameU="msvNoAutoConnect" />
+			<v:ud
+   v:nameU="msvConvertTheme" />
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style
+   id="style2"
+   type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {stroke:#c00000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {stroke:#00b050;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {marker-end:url(#mrkr4-19);stroke:#38557a;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st6 {fill:#38557a;fill-opacity:1;stroke:#38557a;stroke-opacity:1;stroke-width:0.22935779816514}
+		.st7 {marker-end:url(#mrkr4-19);marker-start:url(#mrkr4-31);stroke:#38557a;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st8 {marker-start:url(#mrkr4-31);stroke:#38557a;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st9 {stroke:#612621;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st10 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st11 {fill:#000000;font-family:Arial;font-size:0.75em}
+		.st12 {fill:#000000;font-family:Arial;font-size:0.583328em}
+		.st13 {font-size:1em}
+		.st14 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st15 {fill:#38557a;font-family:Arial;font-size:0.583328em}
+		.st16 {baseline-shift:32.4943%;font-size:0.649886em}
+		.st17 {fill:#0070c0;font-family:Arial;font-size:0.583328em}
+		.st18 {fill:#c00000;font-family:Arial;font-size:0.583328em}
+		.st19 {fill:#00b050;font-family:Arial;font-size:0.583328em}
+		.st20 {fill:#612621;font-family:Arial;font-size:0.583328em}
+		.st21 {marker-start:url(#mrkr4-170);stroke:#612621;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st22 {fill:#612621;fill-opacity:1;stroke:#612621;stroke-opacity:1;stroke-width:0.22935779816514}
+		.st23 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st24 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st25 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st26 {stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st27 {fill:#00b0f0;font-family:Arial;font-size:0.583328em}
+		.st28 {fill:#00bbcc;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st29 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.275271}
+		.st30 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st31 {fill:#ff0000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st32 {marker-end:url(#mrkr4-232);stroke:#00bbcc;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st33 {fill:#00bbcc;fill-opacity:1;stroke:#00bbcc;stroke-opacity:1;stroke-width:0.21739130434783}
+		.st34 {marker-end:url(#mrkr4-232);stroke:#00bbcc;stroke-dasharray:3.5,2.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st35 {fill:#00bbcc;font-family:Arial;font-size:0.583328em}
+		.st36 {marker-start:url(#mrkr10-254);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st37 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.21739130434783}
+		.st38 {marker-end:url(#mrkr4-260);stroke:#65c192;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st39 {fill:#65c192;fill-opacity:1;stroke:#65c192;stroke-opacity:1;stroke-width:0.21739130434783}
+		.st40 {fill:#65c192;font-family:Arial;font-size:0.583328em}
+		.st41 {marker-end:url(#mrkr4-277);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st42 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs
+   id="Markers">
+		<g
+   id="lend4">
+			<path
+   inkscape:connector-curvature="0"
+   id="path4"
+   style="stroke:none"
+   d="M 2,1 0,0 2,-1 v 2" />
+		</g>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="-8.7200003"
+   v:setback="8.72"
+   v:arrowSize="2"
+   v:arrowType="4"
+   class="st6"
+   id="mrkr4-19">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use7"
+   transform="scale(-4.36)"
+   xlink:href="#lend4" />
+		</marker>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="8.2399998"
+   v:setback="8.24"
+   v:arrowSize="2"
+   v:arrowType="4"
+   class="st6"
+   id="mrkr4-31">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use10"
+   transform="scale(4.36)"
+   xlink:href="#lend4" />
+		</marker>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="8.2399998"
+   v:setback="8.24"
+   v:arrowSize="2"
+   v:arrowType="4"
+   class="st22"
+   id="mrkr4-170">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use13"
+   transform="scale(4.36)"
+   xlink:href="#lend4" />
+		</marker>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="-9.1999998"
+   v:setback="9.2"
+   v:arrowSize="1"
+   v:arrowType="4"
+   class="st33"
+   id="mrkr4-232">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use16"
+   transform="scale(-4.6)"
+   xlink:href="#lend4" />
+		</marker>
+		<g
+   id="lend10">
+			<path
+   inkscape:connector-curvature="0"
+   id="path19"
+   style="stroke:none"
+   d="M 0,0.75 C -0.414214,0.75 -0.75,0.414214 -0.75,0 -0.75,-0.414214 -0.414214,-0.75 0,-0.75 0.414214,-0.75 0.75,-0.414214 0.75,0 0.75,0.414214 0.414214,0.75 0,0.75 Z" />
+		</g>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="0"
+   v:setback="0"
+   v:arrowSize="1"
+   v:arrowType="10"
+   class="st37"
+   id="mrkr10-254">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use22"
+   transform="scale(4.6)"
+   xlink:href="#lend10" />
+		</marker>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="-9.1999998"
+   v:setback="9.2"
+   v:arrowSize="1"
+   v:arrowType="4"
+   class="st39"
+   id="mrkr4-260">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use25"
+   transform="scale(-4.6)"
+   xlink:href="#lend4" />
+		</marker>
+		<marker
+   overflow="visible"
+   markerUnits="strokeWidth"
+   orient="auto"
+   refX="-9.1999998"
+   v:setback="9.2"
+   v:arrowSize="1"
+   v:arrowType="4"
+   class="st37"
+   id="mrkr4-277">
+			<use
+   height="100%"
+   width="100%"
+   y="0"
+   x="0"
+   id="use28"
+   transform="scale(-4.6)"
+   xlink:href="#lend4" />
+		</marker>
+	</defs>
+	<g
+   transform="translate(-110.868,-199.92898)"
+   id="g586"
+   v:groupContext="foregroundPage"
+   v:index="2"
+   v:mID="19">
+		<title
+   id="title32">MCF8315_SBD</title>
+		<v:pageProperties
+   v:shadowOffsetY="-9"
+   v:shadowOffsetX="9"
+   v:drawingUnits="19"
+   v:pageScale="1"
+   v:drawingScale="1" />
+		<v:layer
+   v:index="0"
+   v:name="New schematic" />
+		<g
+   transform="translate(416.16,-420.12)"
+   v:groupContext="shape"
+   v:mID="158"
+   id="shape158-1">
+			<title
+   id="title34">Sheet.158</title>
+			<rect
+   id="rect36"
+   class="st1"
+   height="110.88"
+   width="49.680099"
+   y="681.12"
+   x="0"
+   v:rectContext="foreign" />
+			<image
+   id="image38"
+   xlink:href="data:image/png;base64,       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"
+   preserveAspectRatio="none"
+   height="110.88"
+   width="49.680099"
+   y="681.12"
+   x="0" />
+			<rect
+   id="rect40"
+   class="st1"
+   height="110.88"
+   width="49.680099"
+   y="681.12"
+   x="0"
+   v:rectContext="foreign" />
+		</g>
+		<g
+   transform="rotate(180,235.8905,564.355)"
+   v:groupContext="shape"
+   v:mID="66"
+   id="shape66-5">
+			<title
+   id="title43">Sheet.66</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path45"
+   class="st2"
+   d="M 0,792 H 73.48" />
+		</g>
+		<g
+   transform="rotate(180,235.797,584.92)"
+   v:groupContext="shape"
+   v:mID="67"
+   id="shape67-8">
+			<title
+   id="title48">Sheet.67</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path50"
+   class="st3"
+   d="M 0,792 H 73.67" />
+		</g>
+		<g
+   transform="rotate(180,235.8905,543.785)"
+   v:groupContext="shape"
+   v:mID="68"
+   id="shape68-11">
+			<title
+   id="title53">Sheet.68</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path55"
+   class="st4"
+   d="M 0,792 H 74.04" />
+		</g>
+		<g
+   transform="translate(111.243,-492.064)"
+   v:groupContext="shape"
+   v:mID="69"
+   id="shape69-14">
+			<title
+   id="title58">Sheet.69</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path60"
+   class="st5"
+   d="M 0,792 H 99.72" />
+		</g>
+		<g
+   transform="translate(111.243,-475.86)"
+   v:groupContext="shape"
+   v:mID="70"
+   id="shape70-20">
+			<title
+   id="title63">Sheet.70</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path65"
+   class="st5"
+   d="M 0,792 H 99.52" />
+		</g>
+		<g
+   transform="translate(111.243,-412.291)"
+   v:groupContext="shape"
+   v:mID="71"
+   id="shape71-25">
+			<title
+   id="title68">Sheet.71</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path70"
+   class="st7"
+   d="M 6.18,792 H 6.54 99.72" />
+		</g>
+		<g
+   transform="translate(111.243,-524.472)"
+   v:groupContext="shape"
+   v:mID="72"
+   id="shape72-33">
+			<title
+   id="title73">Sheet.72</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path75"
+   class="st5"
+   d="M 0,792 H 99.92" />
+		</g>
+		<g
+   transform="translate(111.243,-457.163)"
+   v:groupContext="shape"
+   v:mID="73"
+   id="shape73-38">
+			<title
+   id="title78">Sheet.73</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path80"
+   class="st8"
+   d="m 6.18,792 h 0.36 99.72" />
+		</g>
+		<g
+   transform="translate(111.243,-430.987)"
+   v:groupContext="shape"
+   v:mID="74"
+   id="shape74-43">
+			<title
+   id="title83">Sheet.74</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path85"
+   class="st8"
+   d="m 6.18,792 h 0.36 99.72" />
+		</g>
+		<g
+   transform="rotate(-90,-116.5575,367.2585)"
+   v:groupContext="shape"
+   v:mID="76"
+   id="shape76-48">
+			<title
+   id="title88">Sheet.76</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path90"
+   class="st9"
+   d="M 0,792 H 14.96" />
+		</g>
+		<g
+   transform="rotate(-90,-158.937,409.638)"
+   v:groupContext="shape"
+   v:mID="77"
+   id="shape77-51">
+			<title
+   id="title93">Sheet.77</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path95"
+   class="st9"
+   d="M 0,792 H 14.96" />
+		</g>
+		<g
+   transform="translate(218.439,-354.33)"
+   v:groupContext="shape"
+   v:mID="78"
+   id="shape78-54">
+			<title
+   id="title98">Sheet.78</title>
+			<desc
+   id="desc100">MCT8315A</desc>
+			<v:textBlock
+   v:verticalAlign="0"
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="186.968"
+   width="179.49"
+   cy="698.516"
+   cx="89.7449" />
+			<rect
+   id="rect102"
+   class="st10"
+   height="186.968"
+   width="179.49001"
+   y="605.03198"
+   x="0" />
+			<text
+   id="text104"
+   v:langID="1033"
+   class="st11"
+   y="617.13"
+   x="66.989998"><v:paragraph
+   v:horizAlign="1" /><v:tabList />MCT8315A</text>		</g>
+		<g
+   transform="translate(233.396,-436.597)"
+   v:groupContext="shape"
+   v:mID="79"
+   id="shape79-57">
+			<title
+   id="title107">Sheet.79</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path109"
+   class="st10"
+   d="m 58.9,792 h 53.28 V 724.69 H 63.57 58.9 0 v 42.07 h 58.9 z" />
+		</g>
+		<g
+   transform="rotate(-90,-11.8555,397.1735)"
+   v:groupContext="shape"
+   v:mID="80"
+   id="shape80-59">
+			<title
+   id="title112">Sheet.80</title>
+			<desc
+   id="desc114">MOSFETs</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="22.4362"
+   width="97.23"
+   cy="780.782"
+   cx="48.6118" />
+			<rect
+   id="rect116"
+   class="st10"
+   height="22.436199"
+   width="97.223602"
+   y="769.56403"
+   x="0" />
+			<text
+   id="text118"
+   v:langID="1033"
+   class="st12"
+   y="782.88"
+   x="32.279999"><v:paragraph
+   v:horizAlign="1" /><v:tabList />MOSFETs</text>		</g>
+		<g
+   transform="translate(233.396,-406.682)"
+   v:groupContext="shape"
+   v:mID="81"
+   id="shape81-62">
+			<title
+   id="title121">Sheet.81</title>
+			<desc
+   id="desc123">Buck/LDO Regulator</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="22.4362"
+   width="112.19"
+   cy="780.782"
+   cx="56.0905" />
+			<rect
+   id="rect125"
+   class="st10"
+   height="22.436199"
+   width="112.181"
+   y="769.56403"
+   x="0" />
+			<text
+   id="text127"
+   v:langID="1033"
+   class="st12"
+   y="782.88"
+   x="23.99"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Buck/LDO Regulator</text>		</g>
+		<g
+   transform="translate(233.396,-369.288)"
+   v:groupContext="shape"
+   v:mID="82"
+   id="shape82-65">
+			<title
+   id="title130">Sheet.82</title>
+			<desc
+   id="desc132">Integrated Current Sensing</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="22.4362"
+   width="149.58"
+   cy="780.782"
+   cx="74.7874" />
+			<rect
+   id="rect134"
+   class="st10"
+   height="22.436199"
+   width="149.575"
+   y="769.56403"
+   x="0" />
+			<text
+   id="text136"
+   v:langID="1033"
+   class="st12"
+   y="782.88"
+   x="32.759998"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Integrated Current Sensing</text>		</g>
+		<g
+   transform="translate(233.396,-436.597)"
+   v:groupContext="shape"
+   v:mID="83"
+   id="shape83-68">
+			<title
+   id="title139">Sheet.83</title>
+			<desc
+   id="desc141">EEPROM</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="29.6033"
+   width="58.9"
+   cy="777.198"
+   cx="29.4475" />
+			<rect
+   id="rect143"
+   class="st10"
+   height="29.6033"
+   width="58.8951"
+   y="762.39697"
+   x="0" />
+			<text
+   id="text145"
+   v:langID="1033"
+   class="st12"
+   y="779.29999"
+   x="14.28"><v:paragraph
+   v:horizAlign="1" /><v:tabList />EEPROM</text>		</g>
+		<g
+   transform="translate(233.396,-466.511)"
+   v:groupContext="shape"
+   v:mID="84"
+   id="shape84-71">
+			<title
+   id="title148">Sheet.84</title>
+			<desc
+   id="desc150">Sensorless Trap</desc>
+			<v:textBlock
+   v:margins="rect(4,2,4,2)" />
+			<v:textRect
+   height="37.3937"
+   width="63.57"
+   cy="773.303"
+   cx="31.7846" />
+			<rect
+   id="rect152"
+   class="st1"
+   height="37.3937"
+   width="63.569302"
+   y="754.60602"
+   x="0" />
+			<text
+   id="text156"
+   v:langID="1033"
+   class="st12"
+   y="771.20001"
+   x="14.47"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Sensorless <v:newlineChar /><tspan
+   id="tspan154"
+   class="st13"
+   dy="1.2em"
+   x="24.59">Trap</tspan></text>		</g>
+		<g
+   v:layerMember="0"
+   v:groupContext="group"
+   v:mID="85"
+   transform="matrix(-0.8660254,-0.5,-0.5,0.8660254,910.293,-346.194)"
+   id="group85-75">
+			<v:userDefs>
+				<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+			</v:userDefs>
+			<title
+   id="title159">Sheet.85</title>
+			<g
+   transform="translate(0,-2.68624)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="86"
+   id="shape86-76">
+				<title
+   id="title161">Sheet.86</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<path
+   inkscape:connector-curvature="0"
+   id="path163"
+   class="st14"
+   d="m 5.98,759.77 a 5.98299,5.37248 0 0 1 5.99,5.37 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 v 2.69 a 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 v 2.69 a 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 5.98299,5.37248 0 0 1 -5.99,5.37" />
+			</g>
+			<g
+   transform="rotate(-90,-14.469,771.548)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="87"
+   id="shape87-79">
+				<title
+   id="title166">Sheet.87</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<path
+   inkscape:connector-curvature="0"
+   id="path168"
+   class="st14"
+   d="M 0,792 H 2.69" />
+			</g>
+			<g
+   transform="rotate(90,4.3345,793.6485)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="88"
+   id="shape88-82">
+				<title
+   id="title171">Sheet.88</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<path
+   inkscape:connector-curvature="0"
+   id="path173"
+   class="st14"
+   d="M 0,792 H 2.69" />
+			</g>
+		</g>
+		<g
+   v:layerMember="0"
+   v:groupContext="group"
+   v:mID="89"
+   transform="matrix(-0.8660254,0.5,0.5,0.8660254,137.52,-319.608)"
+   id="group89-85">
+			<v:userDefs>
+				<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+			</v:userDefs>
+			<title
+   id="title177">Sheet.89</title>
+			<g
+   transform="translate(0,-2.68624)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="90"
+   id="shape90-86">
+				<title
+   id="title179">Sheet.90</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<path
+   inkscape:connector-curvature="0"
+   id="path181"
+   class="st14"
+   d="m 5.98,759.77 a 5.98299,5.37248 0 0 1 5.99,5.37 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 v 2.69 a 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 v 2.69 a 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 5.98299,5.37248 0 0 1 -5.99,5.37" />
+			</g>
+			<g
+   transform="rotate(-90,-14.469,771.548)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="91"
+   id="shape91-89">
+				<title
+   id="title184">Sheet.91</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<path
+   inkscape:connector-curvature="0"
+   id="path186"
+   class="st14"
+   d="M 0,792 H 2.69" />
+			</g>
+			<g
+   transform="rotate(90,4.3345,793.6485)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="92"
+   id="shape92-92">
+				<title
+   id="title189">Sheet.92</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<path
+   inkscape:connector-curvature="0"
+   id="path191"
+   class="st14"
+   d="M 0,792 H 2.69" />
+			</g>
+		</g>
+		<g
+   transform="rotate(-90,-12.3695,307.8495)"
+   v:groupContext="shape"
+   v:mID="93"
+   id="shape93-95">
+			<title
+   id="title195">Sheet.93</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path197"
+   class="st4"
+   d="M 0,792 H 7.39" />
+		</g>
+		<g
+   transform="translate(471.781,-503.905)"
+   v:groupContext="shape"
+   v:mID="94"
+   id="shape94-98">
+			<title
+   id="title200">Sheet.94</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path202"
+   class="st4"
+   d="M 0,792 H 56.09" />
+		</g>
+		<g
+   transform="rotate(90,442.97,820.81)"
+   v:groupContext="shape"
+   v:mID="95"
+   id="shape95-101">
+			<title
+   id="title205">Sheet.95</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path207"
+   class="st3"
+   d="M 0,792 H 7.48" />
+		</g>
+		<g
+   transform="translate(471.781,-406.682)"
+   v:groupContext="shape"
+   v:mID="96"
+   id="shape96-104">
+			<title
+   id="title210">Sheet.96</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path212"
+   class="st3"
+   d="M 0,792 H 56.64" />
+		</g>
+		<g
+   transform="rotate(-90,20.027,284.111)"
+   v:groupContext="shape"
+   v:mID="97"
+   id="shape97-107">
+			<title
+   id="title215">Sheet.97</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path217"
+   class="st4"
+   d="M 0,792 H 16.04" />
+		</g>
+		<g
+   transform="rotate(-90,60.8285,324.4895)"
+   v:groupContext="shape"
+   v:mID="98"
+   id="shape98-110">
+			<title
+   id="title220">Sheet.98</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path222"
+   class="st3"
+   d="M 0,792 H 16.04" />
+		</g>
+		<g
+   transform="translate(138.977,-492.064)"
+   v:groupContext="shape"
+   v:mID="99"
+   id="shape99-113">
+			<title
+   id="title225">Sheet.99</title>
+			<desc
+   id="desc227">DIRECTION</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="67.31"
+   cy="786.391"
+   cx="33.6543" />
+			<rect
+   id="rect229"
+   class="st1"
+   height="11.2181"
+   width="67.308701"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text231"
+   v:langID="1033"
+   class="st15"
+   y="788.48999"
+   x="14.4"><v:paragraph
+   v:horizAlign="1" /><v:tabList />DIRECTION</text>		</g>
+		<g
+   transform="translate(138.777,-475.86)"
+   v:groupContext="shape"
+   v:mID="100"
+   id="shape100-116">
+			<title
+   id="title234">Sheet.100</title>
+			<desc
+   id="desc236">BRAKE</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="67.31"
+   cy="786.391"
+   cx="33.6543" />
+			<rect
+   id="rect238"
+   class="st1"
+   height="11.2181"
+   width="67.308701"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text240"
+   v:langID="1033"
+   class="st15"
+   y="788.48999"
+   x="21.790001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />BRAKE</text>		</g>
+		<g
+   transform="translate(130.045,-412.291)"
+   v:groupContext="shape"
+   v:mID="101"
+   id="shape101-119">
+			<title
+   id="title243">Sheet.101</title>
+			<desc
+   id="desc245">I2C</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="67.31"
+   cy="786.391"
+   cx="33.6543" />
+			<rect
+   id="rect247"
+   class="st1"
+   height="11.2181"
+   width="67.308701"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text253"
+   v:langID="1033"
+   class="st15"
+   y="788.48999"
+   x="28.889999"><v:paragraph
+   v:horizAlign="1" /><v:tabList />I<tspan
+   id="tspan249"
+   v:baseFontSize="7"
+   class="st16"
+   dy="-0.235em">2</tspan><tspan
+   id="tspan251"
+   class="st13"
+   dy="0.153em">C</tspan></text>		</g>
+		<g
+   transform="translate(122.462,-383.622)"
+   v:groupContext="shape"
+   v:mID="102"
+   id="shape102-124">
+			<title
+   id="title256">Sheet.102</title>
+			<desc
+   id="desc258">Optional during operation for I2C speed, diagnostics, or on-t...</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="22.4362"
+   width="93.49"
+   cy="780.782"
+   cx="46.7421" />
+			<rect
+   id="rect260"
+   class="st1"
+   height="22.436199"
+   width="93.4842"
+   y="769.56403"
+   x="0" />
+			<text
+   id="text270"
+   v:langID="1033"
+   class="st15"
+   y="774.47998"
+   x="2.3800001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Optional during operation for <tspan
+   id="tspan262"
+   class="st13"
+   dy="1.2em"
+   x="0.93000001">I</tspan><tspan
+   id="tspan264"
+   v:baseFontSize="7"
+   class="st16"
+   dy="-0.235em">2</tspan><tspan
+   id="tspan266"
+   class="st13"
+   dy="0.153em">C speed, diagnostics, or on</tspan>-<tspan
+   id="tspan268"
+   class="st13"
+   dy="1.2em"
+   x="16.200001">the</tspan>-fly configuration</text>		</g>
+		<g
+   transform="translate(111.243,-507.021)"
+   v:groupContext="shape"
+   v:mID="103"
+   id="shape103-131">
+			<title
+   id="title273">Sheet.103</title>
+			<desc
+   id="desc275">PWM, analog, frequency or commanded over I2C</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="14.9575"
+   width="95.25"
+   cy="784.521"
+   cx="47.6213" />
+			<rect
+   id="rect277"
+   class="st1"
+   height="14.9575"
+   width="95.242599"
+   y="777.04303"
+   x="0" />
+			<text
+   id="text285"
+   v:langID="1033"
+   class="st15"
+   y="782.41998"
+   x="5.21"><v:paragraph
+   v:horizAlign="1" /><v:tabList />PWM, analog, frequency or <tspan
+   id="tspan279"
+   class="st13"
+   dy="1.2em"
+   x="14.84">commanded over I</tspan><tspan
+   id="tspan281"
+   v:baseFontSize="7"
+   class="st16"
+   dy="-0.235em">2</tspan><tspan
+   id="tspan283"
+   class="st13"
+   dy="0.153em">C</tspan></text>		</g>
+		<g
+   transform="translate(139.177,-524.472)"
+   v:groupContext="shape"
+   v:mID="104"
+   id="shape104-137">
+			<title
+   id="title288">Sheet.104</title>
+			<desc
+   id="desc290">SPEED</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="67.31"
+   cy="786.391"
+   cx="33.6543" />
+			<rect
+   id="rect292"
+   class="st1"
+   height="11.2181"
+   width="67.308701"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text294"
+   v:langID="1033"
+   class="st15"
+   y="788.48999"
+   x="21.790001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />SPEED</text>		</g>
+		<g
+   transform="translate(138.977,-457.163)"
+   v:groupContext="shape"
+   v:mID="105"
+   id="shape105-140">
+			<title
+   id="title297">Sheet.105</title>
+			<desc
+   id="desc299">FG</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="67.31"
+   cy="786.391"
+   cx="33.6543" />
+			<rect
+   id="rect301"
+   class="st1"
+   height="11.2181"
+   width="67.308701"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text303"
+   v:langID="1033"
+   class="st15"
+   y="788.48999"
+   x="28.790001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />FG</text>		</g>
+		<g
+   transform="translate(138.977,-447.815)"
+   v:groupContext="shape"
+   v:mID="106"
+   id="shape106-143">
+			<title
+   id="title306">Sheet.106</title>
+			<desc
+   id="desc308">Speed feecback</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="9.34842"
+   width="67.31"
+   cy="787.326"
+   cx="33.6543" />
+			<rect
+   id="rect310"
+   class="st1"
+   height="9.3484201"
+   width="67.308701"
+   y="782.65198"
+   x="0" />
+			<text
+   id="text312"
+   v:langID="1033"
+   class="st15"
+   y="789.42999"
+   x="8.5500002"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Speed feecback</text>		</g>
+		<g
+   transform="translate(138.977,-430.987)"
+   v:groupContext="shape"
+   v:mID="107"
+   id="shape107-146">
+			<title
+   id="title315">Sheet.107</title>
+			<desc
+   id="desc317">nFAULT</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="67.31"
+   cy="786.391"
+   cx="33.6543" />
+			<rect
+   id="rect319"
+   class="st1"
+   height="11.2181"
+   width="67.308701"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text321"
+   v:langID="1033"
+   class="st15"
+   y="788.48999"
+   x="20.620001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />nFAULT</text>		</g>
+		<g
+   transform="translate(398.863,-500.166)"
+   v:groupContext="shape"
+   v:mID="110"
+   id="shape110-149">
+			<title
+   id="title324">Sheet.110</title>
+			<desc
+   id="desc326">A</desc>
+			<v:textBlock
+   v:margins="rect(4,0,4,0)" />
+			<v:textRect
+   height="31.7846"
+   width="15.9"
+   cy="776.108"
+   cx="7.94616" />
+			<rect
+   id="rect328"
+   class="st1"
+   height="31.784599"
+   width="15.8923"
+   y="760.21503"
+   x="0" />
+			<text
+   id="text330"
+   v:langID="1033"
+   class="st17"
+   y="778.21002"
+   x="5.6100001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />A</text>		</g>
+		<g
+   transform="translate(398.863,-459.033)"
+   v:groupContext="shape"
+   v:mID="111"
+   id="shape111-152">
+			<title
+   id="title333">Sheet.111</title>
+			<desc
+   id="desc335">B</desc>
+			<v:textBlock
+   v:margins="rect(4,0,4,0)" />
+			<v:textRect
+   height="31.7846"
+   width="15.9"
+   cy="776.108"
+   cx="7.94616" />
+			<rect
+   id="rect337"
+   class="st1"
+   height="31.784599"
+   width="15.8923"
+   y="760.21503"
+   x="0" />
+			<text
+   id="text339"
+   v:langID="1033"
+   class="st18"
+   y="778.21002"
+   x="5.6100001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />B</text>		</g>
+		<g
+   transform="translate(398.863,-417.9)"
+   v:groupContext="shape"
+   v:mID="112"
+   id="shape112-155">
+			<title
+   id="title342">Sheet.112</title>
+			<desc
+   id="desc344">C</desc>
+			<v:textBlock
+   v:margins="rect(4,0,4,0)" />
+			<v:textRect
+   height="31.7846"
+   width="15.9"
+   cy="776.108"
+   cx="7.94616" />
+			<rect
+   id="rect346"
+   class="st1"
+   height="31.784599"
+   width="15.8923"
+   y="760.21503"
+   x="0" />
+			<text
+   id="text348"
+   v:langID="1033"
+   class="st19"
+   y="778.21002"
+   x="5.4200001"><v:paragraph
+   v:horizAlign="1" /><v:tabList />C</text>		</g>
+		<g
+   transform="translate(238.766,-553.909)"
+   v:groupContext="shape"
+   v:mID="113"
+   id="shape113-158">
+			<title
+   id="title351">Sheet.113</title>
+			<desc
+   id="desc353">4.5 to 35 V (40 V abs max)</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="16.4948"
+   width="160.41"
+   cy="783.753"
+   cx="80.2043" />
+			<rect
+   id="rect355"
+   class="st1"
+   height="16.494801"
+   width="160.409"
+   y="775.505"
+   x="0" />
+			<text
+   id="text357"
+   v:langID="1033"
+   class="st20"
+   y="785.84998"
+   x="38.57"><v:paragraph
+   v:horizAlign="1" /><v:tabList />4.5 to 35 V (40 V abs max)</text>		</g>
+		<g
+   transform="translate(399.175,-359.939)"
+   v:groupContext="shape"
+   v:mID="114"
+   id="shape114-161">
+			<title
+   id="title360">Sheet.114</title>
+			<desc
+   id="desc362">4 A peak output current, typically 12 to 24 V</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="37.3937"
+   width="136.65"
+   cy="773.303"
+   cx="68.3214" />
+			<rect
+   id="rect364"
+   class="st1"
+   height="37.3937"
+   width="136.64301"
+   y="754.60602"
+   x="0" />
+			<text
+   id="text368"
+   v:langID="1033"
+   class="st12"
+   y="771.20001"
+   x="30.959999"><v:paragraph
+   v:horizAlign="1" /><v:tabList />4 A peak output current,<v:newlineChar /><tspan
+   id="tspan366"
+   class="st13"
+   dy="1.2em"
+   x="38.939999">typically 12 to 24 V</tspan></text>		</g>
+		<g
+   transform="translate(111.243,-556.256)"
+   v:groupContext="shape"
+   v:mID="115"
+   id="shape115-165">
+			<title
+   id="title371">Sheet.115</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path373"
+   class="st21"
+   d="M 6.18,792 H 6.54 111.9" />
+		</g>
+		<g
+   transform="translate(128.071,-556.256)"
+   v:groupContext="shape"
+   v:mID="116"
+   id="shape116-171">
+			<title
+   id="title376">Sheet.116</title>
+			<desc
+   id="desc378">Buck out</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="82.27"
+   cy="786.391"
+   cx="41.1331" />
+			<rect
+   id="rect380"
+   class="st1"
+   height="11.2181"
+   width="82.266098"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text382"
+   v:langID="1033"
+   class="st20"
+   y="788.48999"
+   x="27.51"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Buck out</text>		</g>
+		<g
+   transform="translate(126.201,-546.908)"
+   v:groupContext="shape"
+   v:mID="117"
+   id="shape117-174">
+			<title
+   id="title385">Sheet.117</title>
+			<desc
+   id="desc387">3.3 or 5.0 V, up to 170 mA</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="9.34842"
+   width="92.24"
+   cy="787.326"
+   cx="46.1189" />
+			<rect
+   id="rect389"
+   class="st1"
+   height="9.3484201"
+   width="92.237801"
+   y="782.65198"
+   x="0" />
+			<text
+   id="text391"
+   v:langID="1033"
+   class="st20"
+   y="789.42999"
+   x="5.2600002"><v:paragraph
+   v:horizAlign="1" /><v:tabList />3.3 or 5.0 V, up to 170 mA</text>		</g>
+		<g
+   v:groupContext="group"
+   v:mID="118"
+   transform="translate(471.781,-417.9)"
+   id="group118-177">
+			<v:userDefs>
+				<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+			</v:userDefs>
+			<title
+   id="title394">Sheet.118</title>
+			<g
+   v:layerMember="0"
+   v:groupContext="group"
+   v:mID="119"
+   transform="matrix(0,1,1,0,-754.393,748.623)"
+   id="group119-178">
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<title
+   id="title396">Sheet.119</title>
+				<g
+   transform="translate(0,-2.68624)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="120"
+   id="shape120-179">
+					<title
+   id="title398">Sheet.120</title>
+					<v:userDefs>
+						<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+					</v:userDefs>
+					<path
+   inkscape:connector-curvature="0"
+   id="path400"
+   class="st14"
+   d="m 5.98,759.77 a 5.98299,5.37248 0 0 1 5.99,5.37 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 v 2.69 a 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 v 2.69 a 5.98299,5.37248 0 0 1 -5.99,5.37 5.98299,2.68624 0 0 1 -5.98,-2.69 5.98299,2.68624 0 0 1 5.98,-2.68 5.98299,5.37248 0 0 1 5.99,5.37 5.98299,5.37248 0 0 1 -5.99,5.37" />
+				</g>
+				<g
+   transform="rotate(-90,-14.469,771.548)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="121"
+   id="shape121-182">
+					<title
+   id="title403">Sheet.121</title>
+					<v:userDefs>
+						<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+					</v:userDefs>
+					<path
+   inkscape:connector-curvature="0"
+   id="path405"
+   class="st14"
+   d="M 0,792 H 2.69" />
+				</g>
+				<g
+   transform="rotate(90,4.3345,793.6485)"
+   v:layerMember="0"
+   v:groupContext="shape"
+   v:mID="122"
+   id="shape122-185">
+					<title
+   id="title408">Sheet.122</title>
+					<v:userDefs>
+						<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+					</v:userDefs>
+					<path
+   inkscape:connector-curvature="0"
+   id="path410"
+   class="st14"
+   d="M 0,792 H 2.69" />
+				</g>
+			</g>
+			<g
+   transform="rotate(90,37.3935,754.6065)"
+   v:groupContext="shape"
+   v:mID="123"
+   id="shape123-188">
+				<title
+   id="title414">Sheet.123</title>
+				<v:userDefs>
+					<v:ud
+   v:val="VT0(254):26"
+   v:nameU="msvThemeEffects" />
+				</v:userDefs>
+				<circle
+   r="37.3937"
+   id="ellipse416"
+   class="st23"
+   cy="754.60602"
+   cx="37.3937" />
+			</g>
+		</g>
+		<g
+   transform="translate(295.811,-451.898)"
+   v:groupContext="shape"
+   v:mID="125"
+   id="shape125-190">
+			<title
+   id="title420">Sheet.125</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path422"
+   class="st24"
+   d="M 40.55,771.85 C 40.55,760.72 31.48,751.7 20.28,751.7 9.07,751.7 0,760.72 0,771.85 0,782.97 9.07,792 20.28,792 c 11.2,0 20.27,-9.03 20.27,-20.15 z" />
+		</g>
+		<g
+   transform="translate(295.811,-451.898)"
+   v:groupContext="shape"
+   v:mID="126"
+   id="shape126-192">
+			<title
+   id="title425">Sheet.126</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path427"
+   class="st25"
+   d="M 40.55,771.85 C 40.55,760.72 31.48,751.7 20.28,751.7 9.07,751.7 0,760.72 0,771.85 0,782.97 9.07,792 20.28,792 c 11.2,0 20.27,-9.03 20.27,-20.15" />
+		</g>
+		<g
+   transform="translate(338.344,-473.539)"
+   v:groupContext="shape"
+   v:mID="127"
+   id="shape127-195">
+			<title
+   id="title430">Sheet.127</title>
+			<desc
+   id="desc432">A</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="6.64537"
+   width="5.13"
+   cy="788.677"
+   cx="2.56329" />
+			<path
+   inkscape:connector-curvature="0"
+   id="path434"
+   class="st26"
+   d="M 5.13,785.35 H 0 V 792 h 5.13 v -6.65" />
+			<text
+   id="text436"
+   v:langID="1033"
+   class="st27"
+   y="790.78003"
+   x="0.23"><v:paragraph
+   v:horizAlign="1" /><v:tabList />A</text>		</g>
+		<g
+   transform="translate(301.233,-468.966)"
+   v:groupContext="shape"
+   v:mID="128"
+   id="shape128-199">
+			<title
+   id="title439">Sheet.128</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path441"
+   class="st28"
+   d="M 0,780.26 11.76,792 17.65,786.13 5.88,774.39 Z" />
+		</g>
+		<g
+   transform="translate(301.233,-468.966)"
+   v:groupContext="shape"
+   v:mID="129"
+   id="shape129-201">
+			<title
+   id="title444">Sheet.129</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path446"
+   class="st29"
+   d="M 0,780.26 11.76,792 17.65,786.13 5.88,774.39 0,780.26 v 0" />
+		</g>
+		<g
+   transform="translate(308.314,-476.236)"
+   v:groupContext="shape"
+   v:mID="130"
+   id="shape130-204">
+			<title
+   id="title449">Sheet.130</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path451"
+   class="st30"
+   d="m 2.02,791.7 c -0.11,0.12 -0.24,0.2 -0.37,0.25 C 1.51,792 1.37,792.01 1.24,792 1.1,791.98 0.97,791.95 0.83,791.87 0.69,791.81 0.57,791.71 0.45,791.59 0.36,791.51 0.3,791.43 0.24,791.34 0.19,791.26 0.14,791.18 0.1,791.09 0.06,791.02 0.04,790.96 0.02,790.9 0.01,790.84 0,790.8 0,790.76 c 0,-0.02 0.01,-0.06 0.02,-0.09 0.02,-0.03 0.05,-0.06 0.09,-0.11 0.03,-0.02 0.05,-0.05 0.08,-0.06 0.02,-0.01 0.03,-0.02 0.05,-0.04 0.02,0 0.03,0 0.04,0 0.02,0 0.03,0.02 0.04,0.03 0.01,0.01 0.03,0.05 0.04,0.1 0.01,0.06 0.02,0.12 0.05,0.2 0.04,0.07 0.07,0.16 0.12,0.26 0.05,0.09 0.11,0.18 0.21,0.28 0.08,0.07 0.15,0.12 0.23,0.16 0.08,0.05 0.16,0.07 0.23,0.07 0.08,0.02 0.16,0 0.24,-0.02 0.07,-0.04 0.13,-0.07 0.19,-0.15 0.08,-0.06 0.13,-0.13 0.14,-0.22 0.03,-0.09 0.03,-0.17 0.01,-0.26 -0.02,-0.09 -0.05,-0.19 -0.08,-0.28 -0.03,-0.1 -0.07,-0.2 -0.1,-0.3 -0.05,-0.1 -0.08,-0.21 -0.1,-0.31 -0.03,-0.11 -0.04,-0.21 -0.04,-0.32 0,-0.11 0.01,-0.21 0.06,-0.31 0.04,-0.11 0.1,-0.21 0.21,-0.31 0.1,-0.11 0.21,-0.18 0.32,-0.22 0.13,-0.05 0.25,-0.06 0.38,-0.05 0.12,0.01 0.23,0.05 0.36,0.11 0.12,0.06 0.23,0.15 0.34,0.26 0.05,0.05 0.1,0.11 0.15,0.17 0.05,0.08 0.09,0.14 0.12,0.2 0.03,0.08 0.05,0.14 0.08,0.19 0.01,0.06 0.02,0.1 0.02,0.12 0,0.02 0,0.05 0,0.05 -0.01,0.01 -0.01,0.02 -0.02,0.04 0,0.01 -0.01,0.03 -0.03,0.05 -0.01,0.01 -0.03,0.03 -0.06,0.06 -0.02,0.02 -0.05,0.03 -0.06,0.06 -0.02,0.01 -0.04,0.02 -0.06,0.04 -0.01,0 -0.03,0.01 -0.04,0 -0.01,0 -0.02,0 -0.04,-0.02 -0.01,-0.01 -0.02,-0.03 -0.03,-0.08 -0.02,-0.05 -0.03,-0.11 -0.05,-0.18 -0.03,-0.06 -0.05,-0.13 -0.09,-0.21 -0.05,-0.08 -0.1,-0.16 -0.17,-0.23 -0.08,-0.06 -0.14,-0.12 -0.21,-0.15 -0.08,-0.04 -0.14,-0.05 -0.2,-0.05 -0.06,-0.01 -0.13,0 -0.19,0.03 -0.06,0.02 -0.11,0.06 -0.16,0.11 -0.06,0.07 -0.11,0.15 -0.12,0.22 -0.03,0.09 -0.03,0.17 -0.01,0.26 0.01,0.1 0.03,0.19 0.07,0.3 0.04,0.1 0.07,0.19 0.11,0.29 0.04,0.1 0.08,0.21 0.1,0.31 0.04,0.11 0.05,0.22 0.05,0.32 0,0.11 -0.02,0.21 -0.06,0.32 -0.04,0.1 -0.11,0.2 -0.21,0.3 z" />
+		</g>
+		<g
+   transform="translate(312.993,-457.233)"
+   v:groupContext="shape"
+   v:mID="131"
+   id="shape131-206">
+			<title
+   id="title454">Sheet.131</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path456"
+   class="st31"
+   d="M 0,780.27 11.77,792 17.65,786.13 5.89,774.4 Z" />
+		</g>
+		<g
+   transform="translate(312.993,-457.233)"
+   v:groupContext="shape"
+   v:mID="132"
+   id="shape132-208">
+			<title
+   id="title459">Sheet.132</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path461"
+   class="st25"
+   d="M 0,780.27 11.77,792 17.65,786.13 5.89,774.4 0,780.27 v 0" />
+		</g>
+		<g
+   transform="translate(319.74,-464.001)"
+   v:groupContext="shape"
+   v:mID="133"
+   id="shape133-211">
+			<title
+   id="title464">Sheet.133</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path466"
+   class="st30"
+   d="m 1.98,791.94 c -0.02,0.02 -0.05,0.05 -0.09,0.05 C 1.87,792 1.84,792 1.82,792 1.8,792 1.77,791.99 1.75,791.98 1.73,791.96 1.71,791.95 1.7,791.94 l -0.12,-0.11 c -0.03,-0.04 -0.06,-0.06 -0.08,-0.1 -0.01,-0.04 -0.03,-0.08 -0.03,-0.11 -0.01,-0.04 -0.01,-0.09 0,-0.15 0.02,-0.05 0.03,-0.11 0.05,-0.2 l 0.66,-2.16 c 0.04,-0.11 0.06,-0.22 0.11,-0.35 0.04,-0.11 0.07,-0.23 0.11,-0.33 v -0.01 c -0.09,0.1 -0.18,0.2 -0.27,0.28 -0.1,0.1 -0.19,0.2 -0.29,0.3 l -1.49,1.48 c -0.02,0.01 -0.03,0.03 -0.04,0.03 -0.01,0 -0.03,0 -0.04,-0.02 -0.02,0 -0.03,-0.02 -0.06,-0.03 C 0.19,790.44 0.15,790.42 0.12,790.38 0.09,790.35 0.06,790.32 0.05,790.3 0.02,790.27 0.01,790.26 0.01,790.23 0,790.22 0,790.21 0,790.2 c 0,-0.03 0.01,-0.03 0.02,-0.04 l 2.28,-2.28 c 0.05,-0.05 0.1,-0.08 0.16,-0.07 0.05,0 0.09,0.03 0.13,0.07 l 0.16,0.16 c 0.04,0.03 0.06,0.07 0.08,0.09 0.02,0.04 0.03,0.08 0.04,0.12 0,0.02 0,0.07 0,0.11 -0.01,0.05 -0.02,0.1 -0.04,0.16 l -0.5,1.66 c -0.04,0.1 -0.06,0.2 -0.1,0.3 -0.03,0.1 -0.05,0.19 -0.09,0.29 -0.02,0.08 -0.06,0.18 -0.09,0.27 -0.02,0.08 -0.06,0.17 -0.08,0.27 0.1,-0.11 0.2,-0.21 0.31,-0.32 0.11,-0.11 0.21,-0.21 0.31,-0.32 l 1.35,-1.34 c 0.01,-0.01 0.01,-0.01 0.02,-0.02 0.03,0 0.04,0 0.05,0.01 0.03,0.01 0.05,0.02 0.06,0.04 0.03,0.02 0.06,0.05 0.09,0.07 0.04,0.04 0.06,0.06 0.07,0.09 0.03,0.02 0.04,0.05 0.04,0.06 0.01,0.01 0.01,0.04 0.01,0.05 0,0.01 -0.01,0.02 -0.02,0.02 z" />
+		</g>
+		<g
+   transform="rotate(-90,-150.835,400.913)"
+   v:groupContext="shape"
+   v:mID="137"
+   id="shape137-213">
+			<title
+   id="title469">Sheet.137</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path471"
+   class="st9"
+   d="M 0,792 H 38.93" />
+		</g>
+		<g
+   transform="translate(111.243,-580.853)"
+   v:groupContext="shape"
+   v:mID="138"
+   id="shape138-216">
+			<title
+   id="title474">Sheet.138</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path476"
+   class="st21"
+   d="M 6.18,792 H 6.54 128.73" />
+		</g>
+		<g
+   transform="translate(144.898,-580.853)"
+   v:groupContext="shape"
+   v:mID="139"
+   id="shape139-221">
+			<title
+   id="title479">Sheet.139</title>
+			<desc
+   id="desc481">LDO out</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   height="11.2181"
+   width="82.27"
+   cy="786.391"
+   cx="41.1331" />
+			<rect
+   id="rect483"
+   class="st1"
+   height="11.2181"
+   width="82.266098"
+   y="780.78198"
+   x="0" />
+			<text
+   id="text485"
+   v:langID="1033"
+   class="st20"
+   y="788.48999"
+   x="28.1"><v:paragraph
+   v:horizAlign="1" /><v:tabList />LDO out</text>		</g>
+		<g
+   transform="translate(136.173,-571.505)"
+   v:groupContext="shape"
+   v:mID="140"
+   id="shape140-224">
+			<title
+   id="title488">Sheet.140</title>
+			<desc
+   id="desc490">3.3 V, up to 20 mA</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="9.34842"
+   width="92.24"
+   cy="787.326"
+   cx="46.1189" />
+			<rect
+   id="rect492"
+   class="st1"
+   height="9.3484201"
+   width="92.237801"
+   y="782.65198"
+   x="0" />
+			<text
+   id="text494"
+   v:langID="1033"
+   class="st20"
+   y="789.42999"
+   x="17.129999"><v:paragraph
+   v:horizAlign="1" /><v:tabList />3.3 V, up to 20 mA</text>		</g>
+		<g
+   transform="translate(322.5,-471.744)"
+   v:groupContext="shape"
+   v:mID="141"
+   id="shape141-227">
+			<title
+   id="title497">Arrow Right 1/2</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path499"
+   class="st32"
+   d="M 0,792 H 18.4" />
+		</g>
+		<g
+   transform="rotate(117.733,297.92287,652.73003)"
+   v:groupContext="shape"
+   v:mID="142"
+   id="shape142-233">
+			<title
+   id="title502">Arrow Right 1/2.86</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path504"
+   class="st34"
+   d="M 0,792 H 19.8" />
+		</g>
+		<g
+   transform="rotate(-119.113,10.573965,458.4652)"
+   v:groupContext="shape"
+   v:mID="143"
+   id="shape143-238">
+			<title
+   id="title507">Arrow Right 1/2.87</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path509"
+   class="st34"
+   d="M 0,792 H 10.19" />
+		</g>
+		<g
+   transform="translate(290.681,-491.181)"
+   v:groupContext="shape"
+   v:mID="144"
+   id="shape144-243">
+			<title
+   id="title512">Text.197</title>
+			<desc
+   id="desc514">B</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="11.25"
+   width="36"
+   cy="786.375"
+   cx="18" />
+			<rect
+   id="rect516"
+   class="st1"
+   height="11.25"
+   width="36"
+   y="780.75"
+   x="0" />
+			<text
+   id="text518"
+   v:langID="1033"
+   class="st35"
+   y="788.46997"
+   x="15.67"><v:paragraph
+   v:horizAlign="1" /><v:tabList />B</text>		</g>
+		<g
+   transform="translate(280.658,-448.226)"
+   v:groupContext="shape"
+   v:mID="145"
+   id="shape145-246">
+			<title
+   id="title521">Text.89</title>
+			<desc
+   id="desc523">C</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="11.25"
+   width="36"
+   cy="786.375"
+   cx="18" />
+			<rect
+   id="rect525"
+   class="st1"
+   height="11.25"
+   width="36"
+   y="780.75"
+   x="0" />
+			<text
+   id="text527"
+   v:langID="1033"
+   class="st35"
+   y="788.46997"
+   x="15.47"><v:paragraph
+   v:horizAlign="1" /><v:tabList />C</text>		</g>
+		<g
+   transform="rotate(180,254.7675,564.355)"
+   v:groupContext="shape"
+   v:mID="146"
+   id="shape146-249">
+			<title
+   id="title530">Tie Dot</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path532"
+   class="st36"
+   d="M 0,792 H 1.12" />
+		</g>
+		<g
+   transform="rotate(-45,-413.72945,169.65535)"
+   v:groupContext="shape"
+   v:mID="151"
+   id="shape151-255">
+			<title
+   id="title535">Arrow Right 1/2.151</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path537"
+   class="st38"
+   d="M 0,792 H 26.27" />
+		</g>
+		<g
+   transform="rotate(45,719.00692,957.36142)"
+   v:groupContext="shape"
+   v:mID="152"
+   id="shape152-261">
+			<title
+   id="title540">Arrow Right 1/2.152</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path542"
+   class="st38"
+   d="M 0,792 H 11.33" />
+		</g>
+		<g
+   transform="rotate(135,277.50694,611.71103)"
+   v:groupContext="shape"
+   v:mID="153"
+   id="shape153-266">
+			<title
+   id="title545">Text.197.153</title>
+			<desc
+   id="desc547">b</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="11.25"
+   width="36"
+   cy="786.375"
+   cx="18" />
+			<rect
+   id="rect549"
+   class="st1"
+   height="11.25"
+   width="36"
+   y="780.75"
+   x="0" />
+			<text
+   id="text551"
+   v:langID="1033"
+   class="st40"
+   y="788.46997"
+   x="16.049999"><v:paragraph
+   v:horizAlign="1" /><v:tabList />b</text>		</g>
+		<g
+   transform="rotate(45,722.81173,944.44342)"
+   v:groupContext="shape"
+   v:mID="154"
+   id="shape154-269">
+			<title
+   id="title554">Text.154</title>
+			<desc
+   id="desc556">d</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="11.25"
+   width="36"
+   cy="786.375"
+   cx="18" />
+			<rect
+   id="rect558"
+   class="st1"
+   height="11.25"
+   width="36"
+   y="780.75"
+   x="0" />
+			<text
+   id="text560"
+   v:langID="1033"
+   class="st40"
+   y="788.46997"
+   x="16.049999"><v:paragraph
+   v:horizAlign="1" /><v:tabList />d</text>		</g>
+		<g
+   transform="rotate(-90,-81.422,395.145)"
+   v:groupContext="shape"
+   v:mID="155"
+   id="shape155-272">
+			<title
+   id="title563">Arrow Top</title>
+			<path
+   inkscape:connector-curvature="0"
+   id="path565"
+   class="st41"
+   d="M 0,792 H 18.87" />
+		</g>
+		<g
+   transform="translate(303.75,-492.75)"
+   v:groupContext="shape"
+   v:mID="156"
+   id="shape156-278">
+			<title
+   id="title568">Text.197.156</title>
+			<desc
+   id="desc570">β</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="11.25"
+   width="36"
+   cy="786.375"
+   cx="18" />
+			<rect
+   id="rect572"
+   class="st1"
+   height="11.25"
+   width="36"
+   y="780.75"
+   x="0" />
+			<text
+   id="text574"
+   v:langID="1033"
+   class="st12"
+   y="788.46997"
+   x="15.99"><v:paragraph
+   v:horizAlign="1" /><v:tabList />β</text>		</g>
+		<g
+   transform="translate(322.875,-461.25)"
+   v:groupContext="shape"
+   v:mID="157"
+   id="shape157-281">
+			<title
+   id="title577">Text.157</title>
+			<desc
+   id="desc579">α</desc>
+			<v:textBlock
+   v:margins="rect(0,0,0,0)" />
+			<v:textRect
+   height="11.25"
+   width="36"
+   cy="786.375"
+   cx="18" />
+			<rect
+   id="rect581"
+   class="st1"
+   height="11.25"
+   width="36"
+   y="780.75"
+   x="0" />
+			<text
+   id="text583"
+   v:langID="1033"
+   class="st12"
+   y="788.46997"
+   x="15.98"><v:paragraph
+   v:horizAlign="1" /><v:tabList />α  </text>		</g>
+	</g>
+</svg>

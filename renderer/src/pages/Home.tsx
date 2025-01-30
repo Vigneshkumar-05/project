@@ -19,3 +19,14 @@ const Home: React.FunctionComponent = () => {
 };
 
 export default Home;
+
+/*
+[{
+Header : About,
+hero-content: video,
+footer-text: description,
+
+},]
+
+
+*/

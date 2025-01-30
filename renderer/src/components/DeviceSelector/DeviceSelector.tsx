@@ -18,7 +18,7 @@ const ls = [
 ];
 
 const DeviceSelector: React.FunctionComponent = () => {
-  const { setDeviceName } = useDeviceContext();
+  const { deviceName, setDeviceName } = useDeviceContext();
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleDropdown = () => {
@@ -30,9 +30,12 @@ const DeviceSelector: React.FunctionComponent = () => {
   };
 
   return (
+    // update required for handling drop down
+
     <div className="m-1 px-2 py-4 min-h-[25%] w-[40%] grid grid-rows-6 grid-cols-[20%_1fr] gap-1 bg-[#ffffff] rounded-md shadow-lg">
       <Input handleDropdown={handleDropdown} showDropdown={showDropdown} />
 
+      {/* Dropdown items */}
       <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-gray-100 rounded-md">
         {showDropdown &&
           ls.map((d, i) => (
@@ -53,32 +56,53 @@ const DeviceSelector: React.FunctionComponent = () => {
         <FaCircle className=" text-red-400 text-3xl mr-[10%]" />
       </div>
 
-      <h1 className="text-start flex items-center text-gray-800">
-        Hardware Not Detected
-      </h1>
+      <section className="text-start flex items-center text-gray-800">
+        {deviceName != "" ? (
+          <h1>{deviceName}</h1>
+        ) : (
+          <h1>Hardware Not Detected</h1>
+        )}
+      </section>
 
       <br />
 
-      <p className="w-[85%] text-gray-400 text-xs font-semibold">
-        Please plug your target device into your computer's USB port
-      </p>
+      <section className="w-[85%] text-gray-400 text-xs font-semibold">
+        {deviceName != "" ? (
+          <div className="h-full flex flex-col justify-around">
+            <p>EVM Not Connected</p>
+            <p>Device Selected : {deviceName}</p>
+          </div>
+        ) : (
+          <p>Please plug your target device into your computer's USB port</p>
+        )}
+      </section>
 
       <div className="flex justify-end items-center">
-        <IoWarningOutline className="text-red-700 mr-[10%]" />
+        {deviceName == "" && (
+          <IoWarningOutline className="text-red-700 mr-[10%]" />
+        )}
       </div>
 
-      <div className="flex items-center">
-        <p className="text-red-700 text-xs">Select device from the dropdown.</p>
-      </div>
+      <section className="flex items-center">
+        {deviceName == "" && (
+          <p className="text-red-700 text-xs">
+            Select device from the dropdown.
+          </p>
+        )}
+      </section>
 
-      <div className="row-span-3 p-2 w-[10rem] flex justify-between items-end text-md">
-        <button className="p-2 text-sm  bg-red-500 text-white rounded-sm">
-          Proceed
-        </button>
-        <button className="p-[0.39rem] text-sm text-red-500 rounded-sm border-red-500 border-2">
-          Re-Scan
-        </button>
-      </div>
+      <section className="row-span-3 p-2 w-[10rem] flex justify-between items-end text-md">
+        {deviceName != "" && (
+          <>
+            <button className="p-2 text-sm  bg-red-500 text-white rounded-sm">
+              Proceed
+            </button>
+            <button className="p-[0.39rem] text-sm text-red-500 rounded-sm border-red-500 border-2">
+              Re-Scan
+            </button>
+          </>
+        )}
+      </section>
     </div>
   );
 };

@@ -2,14 +2,8 @@ import RightPanel from "../components/RightPanel/RightPanel";
 
 const QuickSpin: React.FunctionComponent = () => {
   return (
-    <div className="flex justify-between">
-      <div>
-        <p>quick spin</p>
-      </div>
-
-      <div>
-        <RightPanel />
-      </div>
+    <div className="absolute top-12 right-0 w-[26%]">
+      <RightPanel />
     </div>
   );
 };

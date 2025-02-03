@@ -29,12 +29,12 @@ const About: React.FunctionComponent = () => {
   }, [deviceName]);
 
   return (
-    <div className="h-[94%] flex flex-col justify-evenly bg-white shadow-lg">
+    <div className="h-[99%] flex flex-col justify-evenly bg-white shadow-lg">
       <header className="text-lg font-bold">
         <p className="px-2 custom-underline">{currentSelectedDevice.header}</p>
       </header>
 
-      <main className="h-[60%] px-1 flex justify-center items-center">
+      <main className="h-fit px-1 flex justify-center items-center">
         {deviceName === "" ? (
           <video
             width={"100%"}
@@ -55,7 +55,7 @@ const About: React.FunctionComponent = () => {
 
       <footer>
         <p
-          className="h-[14rem] p-3 overflow-auto scroll-smooth text-sm font-stretch-normal
+          className="h-[20rem] p-3 overflow-auto scroll-smooth text-sm font-stretch-normal
  tracking-wide text-justify leading-7"
         >
           {currentSelectedDevice.footer}

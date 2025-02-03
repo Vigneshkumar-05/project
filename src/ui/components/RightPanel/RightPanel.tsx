@@ -23,25 +23,23 @@ const RightPanel: React.FunctionComponent = () => {
   };
 
   return (
-    <div className="top-3 flex flex-col bg-white px-1.5 py-1 h-full">
-      <div className="bg-gray-100 rounded-md flex p-1">
-        <nav className="flex p-1 justify-evenly">
-          {["Controls", "Faults", "Charts", "Logs"].map((tab) => (
-            <button
-              key={tab}
-              className={`px-5 py-1 rounded-md text-sm font-medium ${
-                activeTab === tab
-                  ? "bg-white text-black"
-                  : "text-black bg-gray-100"
-              }`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </nav>
-      </div>
-      {renderContent()}
+    <div className="top-3 flex flex-col bg-white border border-gray-300 rounded-lg shadow-lg">
+      <nav className="flex space-x-1 border-spacing-10 bg-gray-100 p-2">
+        {["Controls", "Faults", "Charts", "Logs"].map((tab) => (
+          <button
+            key={tab}
+            className={`px-4 py-2 rounded-md text-sm font-medium ${
+              activeTab === tab
+                ? "bg-white text-black"
+                : "text-gray-600 hover:bg-gray-100 hover:text-black"
+            }`}
+            onClick={() => setActiveTab(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </nav>
+      <div>{renderContent()}</div>
     </div>
   );
 };

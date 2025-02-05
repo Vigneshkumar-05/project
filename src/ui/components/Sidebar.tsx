@@ -18,12 +18,8 @@ const SidebarItems: React.FunctionComponent<SidebarItemsPropsType> = ({
   return (
     <div className="h-full flex flex-col justify-around">
       {items.map((value, index) => (
-        <Link to={value.action!}>
-          <button
-            tabIndex={0}
-            key={index}
-            className="m-[10%] p-[17%] icon-container-style"
-          >
+        <Link to={value.action!} key={index}>
+          <button tabIndex={0} className="m-[10%] p-[17%] icon-container-style">
             <img title={value.tooltip} src={value.icon} alt="" />
           </button>
         </Link>

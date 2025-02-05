@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import NavItems from "../config/NavItems";
 
 declare global {
@@ -11,10 +11,16 @@ declare global {
 
 const Navigation: React.FunctionComponent = () => {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const dropdownRef = useRef(null);
 
-  const handleOpenDropdown = (index: number) => setActiveDropdown(index);
+  const handleDropdown = (value: number | null) => setActiveDropdown(value);
 
-  const handleCloseDropdown = () => setActiveDropdown(null);
+  useEffect(() => {
+    document.addEventListener("mousedown", () => handleDropdown(null));
+    return () => {
+      document.removeEventListener("mousedown", () => handleDropdown(null));
+    };
+  });
 
   return (
     <header className="flex items-center col-span-3 bg-[#c00] text-white">
@@ -28,7 +34,7 @@ const Navigation: React.FunctionComponent = () => {
           <div key={index}>
             <span
               className="cursor-pointer"
-              onClick={() => handleOpenDropdown(index)}
+              onClick={() => handleDropdown(index)}
             >
               {value.name}
             </span>
@@ -36,7 +42,7 @@ const Navigation: React.FunctionComponent = () => {
             {activeDropdown === index && (
               <div
                 className="h-fit absolute top-10 flex flex-col bg-gray-100 text-gray-800 "
-                onMouseLeave={handleCloseDropdown}
+                ref={dropdownRef}
               >
                 {value.submenu.map((data, index) => (
                   <span
@@ -44,7 +50,7 @@ const Navigation: React.FunctionComponent = () => {
                     className="px-4 py-2 block cursor-pointer hover:bg-gray-200"
                     onClick={() => {
                       data.action();
-                      handleCloseDropdown();
+                      handleDropdown(index);
                     }}
                   >
                     {data.name}

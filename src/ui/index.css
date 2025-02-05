@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vertical separator */
 .separator::after {
     content: "";
     height: 5rem;
@@ -9,23 +16,7 @@
     border: 1px solid white;
 }
 
-.icon-container-style:hover {
-    border-radius: 0.2rem;
-    background-color: #ebebeb;
-}
-
-.icon-styles:active {
-    border-radius: 0.2rem;
-    background-color: #dadada;
-    transition: background-color 0.5s ease;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Horizontal separator */
 .custom-underline::after {
     content: "";
     display: flex;
@@ -33,42 +24,72 @@
     border: 1px solid #c00;
 }
 
-.featurelist-hover p,
-.icon {
-    color: rgb(95, 92, 92);
-    transition: color 0.3s ease-in-out;
+/* Sidebar icons */
+.icon-container-style:hover {
+    border-radius: 0.2rem;
+    background-color: #ebebeb;
 }
 
-.featurelist-hover:hover p,
-.featurelist-hover:hover .icon {
-    color: #189;
+.icon-styles:focus {
+    animation: activeAnimation 1s forwards;
+    border-radius: 0.2rem;
+    /* transition: background-color 0.5s ease; */
 }
 
+@keyframes activeAnimation {
+    0% {
+        background-color: #189;
+    }
+
+    50% {
+        background-color: #000;
+    }
+
+    100% {
+        background-color: #189;
+    }
+}
+
+
+/* Features list */
 .featurelist-hover {
+
+    p,
+    .icon {
+        color: rgb(95, 92, 92);
+        transition: color 0.3s ease-in-out;
+    }
+
     box-shadow: 1px 1px 1px 0 #0003;
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .featurelist-hover:hover {
+
+    p,
+    .icon {
+        color: #189;
+    }
+
     outline: none;
     box-shadow: 6px 6px 6px 0 #0003;
 }
 
+
+/* Drop down icon */
 .rotate-icon {
     transform: rotate(180deg);
 }
 
+
+/* custom scrollbar */
 ::-webkit-scrollbar {
     width: 0.25rem;
 }
 
-
-
 ::-webkit-scrollbar-track {
     background-color: #ffffff;
 }
-
-
 
 ::-webkit-scrollbar-thumb {
     background-color: #c00;

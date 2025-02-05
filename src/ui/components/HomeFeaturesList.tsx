@@ -19,3 +19,14 @@ const HomeFeaturesList: React.FunctionComponent = () => {
 };
 
 export default HomeFeaturesList;
+
+/*
+Quick Spin
+Get your motor spining in just few steps.
+Optimization Wizards
+Go here after your motor spin consistently.
+Advanced Tuning
+Access all your control in one single page.
+Register Map
+Full interactive device register map.
+*/

@@ -9,15 +9,15 @@ const Home: React.FunctionComponent = () => {
   const [proceedStatus, setProceedStatus] = useState(false);
 
   return (
-    <div className="h-full p-1 flex justify-between">
-      <section className="h-full w-[50%] flex flex-col">
+    <div className="max-h-full p-1 flex justify-between">
+      <section className="max-h-full w-[50%] flex flex-col">
         <DeviceSelector setProceedStatus={setProceedStatus} />
-        <div className="h-[30%] flex items-end">
+        <div className="h-full flex items-center">
           <HomeFeaturesList />
         </div>
       </section>
 
-      <section className="h-full w-[50%] flex items-center">
+      <section className="max-h-full w-[50%] flex items-center">
         {proceedStatus ? <HardwareSetup /> : <About />}
       </section>
     </div>

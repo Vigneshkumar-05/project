@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 import image from "../assets/images/EVM.png";
 
 const setUpConfig = [
@@ -22,36 +23,45 @@ const setUpConfig = [
 
 const HardwareSetup: React.FunctionComponent = () => {
   return (
-    <div className="h-full p-1 flex flex-col bg-white shadow-lg">
+    <div className="py-2 h-[99%] flex flex-col justify-between bg-white shadow-lg rounded-md">
       <header className="text-lg font-bold">
         <p className="px-2 custom-underline">Hardware Setup</p>
       </header>
 
-      <main className="h-[50%] flex justify-center items-center">
+      <section className="flex justify-center items-center">
         <img
+          width={"75%"}
+          height={"90%"}
           src={image}
           alt="Work flow image about the specified device"
-          className="w-full h-full bg-cover"
         />
-      </main>
+      </section>
 
-      <footer className="h-full w-full">
-        <div className="h-[30vh] w-full overflow-auto">
-          {setUpConfig[0].footer.map((data, index) => (
-            <p
-              key={index}
-              className="px-3 overflow-auto scroll-smooth text-sm font-stretch-normal
- tracking-wide text-justify leading-7"
-            >
-              {index + 1}. {data}
-            </p>
-          ))}
-        </div>
+      <section className="h-[300px] w-full overflow-auto">
+        {setUpConfig[0].footer.map((data, index) => (
+          <p
+            key={index}
+            className="px-3 scroll-smooth font-stretch-normal text-xs text-justify text-txGray leading-7"
+          >
+            {index + 1}. {data}
+          </p>
+        ))}
+      </section>
 
-        <div className="h-full w-full flex items-center border-2 border-blue-600">
-          <p>The Hardware setup is done</p>
-          <button>Configure</button>
+      <footer className="h-14 w-full md:w-[60%] flex justify-between items-center">
+        <div className="w-[65%] flex justify-around items-center">
+          <input type="checkbox" className="w-8 h-5 accent-lgBlue" />
+          <p className="text-lgBlue text-sm">
+            Hardware setup has been done manually
+          </p>
         </div>
+        <Button
+          name={"Setup Now"}
+          position="primary"
+          onClick={() => {
+            console.log("button clicked");
+          }}
+        />
       </footer>
     </div>
   );

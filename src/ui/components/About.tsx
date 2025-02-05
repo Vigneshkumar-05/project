@@ -55,7 +55,7 @@ const About: React.FunctionComponent = () => {
 
       <footer>
         <p
-          className="h-[20rem] p-3 overflow-auto scroll-smooth text-sm font-stretch-normal
+          className="h-[20rem] p-3 overflow-auto scroll-smooth text-xs font-stretch-normal text-txGray
  tracking-wide text-justify leading-7"
         >
           {currentSelectedDevice.footer}

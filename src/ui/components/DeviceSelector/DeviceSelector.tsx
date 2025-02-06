@@ -37,12 +37,9 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
   };
 
   return (
-    // update required for handling drop down
-
-    <div className="py-3 w-[40%] grid grid-rows-5 grid-cols-[25%_1fr] gap-1 bg-white rounded-md shadow-custom">
+    <div className="py-3 w-[40%] grid grid-rows-5 grid-cols-[25%_1fr] gap-1 bg-white rounded-md shadow-custom1">
       <Input handleDropdown={handleDropdown} showDropdown={showDropdown} />
 
-      {/* Dropdown items */}
       <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-white rounded-md">
         {showDropdown &&
           ls.map((d, i) => (
@@ -109,7 +106,7 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
             <Button
               name={"Re-Scan"}
               position={"secondary"}
-              onClick={() => {}}
+              onClick={() => { }}
             ></Button>
           </div>
         )}

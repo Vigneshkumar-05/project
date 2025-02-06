@@ -1,13 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import NavItems from "../config/NavItems";
-
-declare global {
-  interface Window {
-    navigationApi: {
-      openScriptWindow: () => void;
-    };
-  }
-}
+import { navigationRoutes } from "../config/routes";
 
 const Navigation: React.FunctionComponent = () => {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
@@ -24,16 +16,14 @@ const Navigation: React.FunctionComponent = () => {
 
   return (
     <header className="flex items-center col-span-3 bg-primaryRed text-white">
-      {/* Header logo */}
       <div className="h-full mx-2 min-w-[10%] flex justify-center items-center text-xl font-bold">
         <h1 className="separator min-w-fit text-gray-100 whitespace-nowrap">
           Motor Studio
         </h1>
       </div>
 
-      {/* Menu */}
       <nav className="h-full ml-[2%] min-w-[28%] flex justify-between items-center text-xsm">
-        {NavItems.map((value, index) => (
+        {navigationRoutes.map((value, index) => (
           <div key={index}>
             <span
               className="cursor-pointer"
@@ -42,10 +32,9 @@ const Navigation: React.FunctionComponent = () => {
               {value.name}
             </span>
 
-            {/* Drop down */}
             {activeDropdown === index && (
               <div
-                className="h-fit w-fit absolute top-10 flex flex-col bg-white text-black rounded-sm"
+                className="h-fit w-fit absolute top-10 flex flex-col bg-white text-black rounded-sm shadow-custom2"
                 ref={dropdownRef}
               >
                 {value.submenu.map((data, index) => (

@@ -1,55 +1,44 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { sidebarTopItems, sidebarBottomItems } from "../config/SidebarItems";
-import { IconType } from "react-icons/lib";
+import { routes, sidebarFunctions } from "../config/routes";
 
-type itemType = {
-  name: string;
-  icon: IconType;
-  tooltip: string;
-  action?: string;
-};
+type SidebarPropsType = {
+  activeTab: number;
+  setActiveTab: React.Dispatch<React.SetStateAction<number>>;
+}
 
-type SidebarItemsPropsType = {
-  items: itemType[];
-};
-
-const SidebarItems: React.FunctionComponent<SidebarItemsPropsType> = ({
-  items,
-}) => {
+const Sidebar: React.FC<SidebarPropsType> = ({ activeTab, setActiveTab }) => {
   return (
-    <div className="h-full flex flex-col justify-around">
-      {items.map((value, index) => (
-        <Link to={value.action!} key={index}>
-          <button className="hover:bg-shadowGray rounded-md">
+    <aside className="h-full flex flex-col justify-between items-center bg-white shadow-custom1">
+      <section className="h-[50%] flex flex-col justify-around">
+        {routes.map((value, index) => (
+          <button key={index} className="hover:bg-shadowGray rounded-md">
             <div
-              className={`p-2 text-2xl ${
-                value.name === "Disconnected"
-                  ? "text-primaryRed"
-                  : "text-txGray"
-              }`}
+              className={`p-2 text-2xl ${value.name === "Disconnected"
+                ? "text-primaryRed"
+                : activeTab === index ? "text-lgBlue" : "text-txGray"
+                }`}
+              onClick={() => setActiveTab(index)}
             >
               {React.createElement(value.icon)}
             </div>
           </button>
-        </Link>
-      ))}
-    </div>
-  );
-};
+        ))}
+      </section>
 
-const Sidebar: React.FunctionComponent = () => {
-  return (
-    <aside className="h-full bg-white shadow-custom">
-      <div className="h-[95%] flex flex-col justify-between items-center">
-        <section className="h-[50%]">
-          <SidebarItems items={sidebarTopItems} />
-        </section>
-
-        <section className="h-[14%] flex flex-col justify-around">
-          <SidebarItems items={sidebarBottomItems} />
-        </section>
-      </div>
+      <section className="h-[16%] flex flex-col justify-around">
+        {sidebarFunctions.map((value, index) => (
+          <button key={index} className="hover:bg-shadowGray rounded-md">
+            <div
+              className={`p-2 text-2xl ${value.name === "Disconnected"
+                ? "text-primaryRed"
+                : "text-txGray"
+                }`}
+            >
+              {React.createElement(value.icon)}
+            </div>
+          </button>
+        ))}
+      </section>
     </aside>
   );
 };

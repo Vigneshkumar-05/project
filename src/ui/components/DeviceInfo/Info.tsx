@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { useDeviceContext } from "../context/DeviceContext";
+import { useDeviceContext } from "../../context/DeviceContext";
 
-import about from "../config/AboutList";
-import video from "../assets/video/wave.mp4";
+import info from "../../config/info";
+import video from "../../assets/video/wave.mp4";
 
 type currentSelectedDeviceType = {
   header: string;
@@ -11,16 +11,16 @@ type currentSelectedDeviceType = {
   footer: string;
 };
 
-const About: React.FunctionComponent = () => {
+const Info: React.FunctionComponent = () => {
   const { deviceName } = useDeviceContext();
   const [currentSelectedDevice, setCurrentSelectedDevice] =
-    useState<currentSelectedDeviceType>(about[0]);
+    useState<currentSelectedDeviceType>(info[0]);
 
   useEffect(() => {
     if (deviceName === "") {
-      setCurrentSelectedDevice(about[0]);
+      setCurrentSelectedDevice(info[0]);
     } else {
-      about.forEach((data) => {
+      info.forEach((data) => {
         if (deviceName === data.name) {
           setCurrentSelectedDevice(data);
         }
@@ -48,7 +48,7 @@ const About: React.FunctionComponent = () => {
         ) : (
           <img
             src={currentSelectedDevice.heroContent}
-            alt="Work flow image about the specified device"
+            alt="Work flow image info the specified device"
           />
         )}
       </main>
@@ -65,4 +65,4 @@ const About: React.FunctionComponent = () => {
   );
 };
 
-export default About;
+export default Info;

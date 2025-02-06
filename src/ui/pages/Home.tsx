@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 import DeviceSelector from "../components/DeviceSelector/DeviceSelector";
-import HomeFeaturesList from "../components/HomeFeaturesList";
-import About from "../components/About";
-import HardwareSetup from "../components/HardwareSetup";
-import Setup from "../components/Setup";
+import Links from "../components/Links";
+import Info from "../components/DeviceInfo/Info";
+import HardwareSetup from "../components/DeviceInfo/HardwareSetup";
+import SetupOverview from "../components/DeviceInfo/SetupOverview";
 
 const Home: React.FunctionComponent = () => {
   const [proceedStatus, setProceedStatus] = useState(false);
@@ -16,8 +16,8 @@ const Home: React.FunctionComponent = () => {
         <div className="max-h-full p-1 flex justify-between">
           <section className="max-h-full w-[50%] flex flex-col">
             <DeviceSelector setProceedStatus={setProceedStatus} />
-            <div className="h-full flex items-center">
-              <HomeFeaturesList />
+            <div className="mt-3 h-full flex items-start">
+              <Links />
             </div>
           </section>
 
@@ -25,12 +25,12 @@ const Home: React.FunctionComponent = () => {
             {proceedStatus ? (
               <HardwareSetup setConfigure={setConfigure} />
             ) : (
-              <About />
+              <Info />
             )}
           </section>
         </div>
       ) : (
-        <Setup />
+        <SetupOverview />
       )}
     </>
   );

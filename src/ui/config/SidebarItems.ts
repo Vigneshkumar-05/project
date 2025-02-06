@@ -1,52 +1,53 @@
-import Home from "../assets/icons/home.svg";
-import QuickSpin from "../assets/icons/quickspin.svg";
-import OptimizationWizards from "../assets/icons/optimizationwizard.svg";
-import MPET from "../assets/icons/mpet.svg";
-import ClosedLoopTuning from "../assets/icons/closedlooptuning.svg";
-import AdvancedTuning from "../assets/icons/advancedtuning.svg";
-import RegisterMap from "../assets/icons/registermap.svg";
-import OpenSidebar from "../assets/icons/opensidebar.svg";
-import Disconnected from "../assets/icons/disconnected.svg";
+import { RiHome4Line } from "react-icons/ri";
+import { PiSpinnerBallDuotone } from "react-icons/pi";
+import { MdOutlineTune } from "react-icons/md";
+import { IoMdFootball } from "react-icons/io";
+import { MdInsertChartOutlined } from "react-icons/md";
+import { IoMdSettings } from "react-icons/io";
+import { TbChartTreemap } from "react-icons/tb";
+
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { IoLinkSharp } from "react-icons/io5";
 
 const sidebarTopItems = [
   {
-    icon: Home,
+    icon: RiHome4Line,
     name: "Home",
     tooltip: "Home",
     action: "/",
   },
   {
-    icon: QuickSpin,
+    icon: PiSpinnerBallDuotone,
     name: "Quick Spin",
     tooltip: "Quick Spin",
     action: "/quickspin",
   },
   {
-    icon: OptimizationWizards,
+    icon: MdOutlineTune,
     name: "Optimization Wizards",
     tooltip: "Optimization Wizards",
     action: "/optimizationwizards",
   },
   {
-    icon: MPET,
+    icon: IoMdFootball,
     name: "MPET",
     tooltip: "MPET",
     action: "/mpet",
   },
   {
-    icon: ClosedLoopTuning,
+    icon: MdInsertChartOutlined,
     name: "Closed Loop Tuning",
     tooltip: "Closed Loop Tuning",
     action: "/closedlooptuning",
   },
   {
-    icon: AdvancedTuning,
+    icon: IoMdSettings,
     name: "Advanced Tuning",
     tooltip: "Advanced Tuning",
     action: "/advancedtuning",
   },
   {
-    icon: RegisterMap,
+    icon: TbChartTreemap,
     name: "Register Map",
     tooltip: "Register Map",
     action: "/registermap",
@@ -55,12 +56,12 @@ const sidebarTopItems = [
 
 const sidebarBottomItems = [
   {
-    icon: OpenSidebar,
+    icon: MdOutlineKeyboardDoubleArrowRight,
     name: "Open sidebar",
     tooltip: "",
   },
   {
-    icon: Disconnected,
+    icon: IoLinkSharp,
     name: "Disconnected",
     tooltip: "Disconnected",
   },

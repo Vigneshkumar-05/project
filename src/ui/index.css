@@ -25,10 +25,6 @@
 }
 
 /* Sidebar icons */
-.icon-container-style:hover {
-    border-radius: 0.2rem;
-    background-color: #ebebeb;
-}
 
 .icon-styles:focus {
     animation: activeAnimation 1s forwards;

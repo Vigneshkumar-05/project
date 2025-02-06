@@ -2,6 +2,10 @@ import React from "react";
 import Button from "./Button";
 import image from "../assets/images/EVM.png";
 
+type HardwareSetupPropsType = {
+  setConfigure: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
 const setUpConfig = [
   {
     header: "Hardware Setup",
@@ -21,7 +25,9 @@ const setUpConfig = [
   },
 ];
 
-const HardwareSetup: React.FunctionComponent = () => {
+const HardwareSetup: React.FunctionComponent<HardwareSetupPropsType> = ({
+  setConfigure,
+}) => {
   return (
     <div className="py-2 h-[99%] flex flex-col justify-between bg-white shadow-lg rounded-md">
       <header className="text-lg font-bold">
@@ -41,7 +47,7 @@ const HardwareSetup: React.FunctionComponent = () => {
         {setUpConfig[0].footer.map((data, index) => (
           <p
             key={index}
-            className="px-3 scroll-smooth font-stretch-normal text-xs text-justify text-txGray leading-7"
+            className="px-3 scroll-smooth font-stretch-normal text-xsm text-justify text-txGray leading-7"
           >
             {index + 1}. {data}
           </p>
@@ -59,7 +65,7 @@ const HardwareSetup: React.FunctionComponent = () => {
           name={"Setup Now"}
           position="primary"
           onClick={() => {
-            console.log("button clicked");
+            setConfigure(true);
           }}
         />
       </footer>

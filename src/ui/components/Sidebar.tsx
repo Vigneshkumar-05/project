@@ -1,9 +1,11 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { sidebarTopItems, sidebarBottomItems } from "../config/SidebarItems";
+import { IconType } from "react-icons/lib";
 
 type itemType = {
   name: string;
-  icon: string;
+  icon: IconType;
   tooltip: string;
   action?: string;
 };
@@ -19,8 +21,16 @@ const SidebarItems: React.FunctionComponent<SidebarItemsPropsType> = ({
     <div className="h-full flex flex-col justify-around">
       {items.map((value, index) => (
         <Link to={value.action!} key={index}>
-          <button tabIndex={0} className="m-[10%] p-[17%] icon-container-style">
-            <img title={value.tooltip} src={value.icon} alt="" />
+          <button className="hover:bg-shadowGray rounded-md">
+            <div
+              className={`p-2 text-2xl ${
+                value.name === "Disconnected"
+                  ? "text-primaryRed"
+                  : "text-txGray"
+              }`}
+            >
+              {React.createElement(value.icon)}
+            </div>
           </button>
         </Link>
       ))}

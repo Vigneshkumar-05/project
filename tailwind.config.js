@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xsm: "12.8px"
+      },
       boxShadow: {
         custom: "1px 1px 1px 0px #0001",
       },
@@ -15,6 +18,9 @@ export default {
         shadowGray: "#f5f5f5",
         txGray: "#5f5c5c",
         lgBlue: "#189"
+      },
+      backgroundImage: {
+        "setup": "url('/src/ui/assets/images/EVM.png')",
       }
     },
   },

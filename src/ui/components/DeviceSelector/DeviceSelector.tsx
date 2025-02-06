@@ -43,12 +43,12 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
       <Input handleDropdown={handleDropdown} showDropdown={showDropdown} />
 
       {/* Dropdown items */}
-      <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-gray-100 rounded-md">
+      <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-white rounded-md">
         {showDropdown &&
           ls.map((d, i) => (
             <div
               key={i}
-              className="p-2 cursor-pointer hover:bg-gray-200"
+              className="p-2 cursor-pointer hover:bg-shadowGray"
               onClick={() => {
                 handleDeviceSelection(i);
                 handleDropdown();
@@ -63,7 +63,7 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
         <FaCircle className=" text-red-400 text-3xl mr-[10%]" />
       </div>
 
-      <section className="h-full flex items-center text-gray-800">
+      <section className="h-full flex items-center text-gray-900">
         {deviceName != "" ? (
           <h1>{deviceName}</h1>
         ) : (
@@ -73,7 +73,7 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
 
       <br />
 
-      <section className="h-full max-w-[28ch] text-gray-400 text-xs font-semibold">
+      <section className="h-full max-w-[28ch] text-gray-400 text-xsm font-semibold">
         {deviceName != "" ? (
           <div className="h-full flex flex-col justify-around">
             <p>EVM Not Connected</p>
@@ -86,13 +86,13 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
 
       <div className="h-full flex justify-end items-center">
         {deviceName == "" && (
-          <IoWarningOutline className="text-red-700 mr-[10%]" />
+          <IoWarningOutline className="text-primaryRed mr-[10%]" />
         )}
       </div>
 
       <section className="h-full flex items-center">
         {deviceName == "" && (
-          <p className="text-red-700 text-xs">
+          <p className="text-primaryRed text-xsm">
             Select device from the dropdown.
           </p>
         )}

@@ -19,7 +19,6 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { IoLinkSharp } from "react-icons/io5";
 
 
-
 const routes = [
   {
     icon: RiHome4Line,
@@ -62,10 +61,16 @@ const sidebarFunctions = [
   {
     icon: MdOutlineKeyboardDoubleArrowRight,
     name: "Open sidebar",
+    onClick: (setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>) => {
+      setShowSidebar((prev) => !prev);
+    }
   },
   {
     icon: IoLinkSharp,
     name: "Disconnected",
+    onClick: () => {
+      console.log("Disconnected clicked");
+    }
   },
 ];
 

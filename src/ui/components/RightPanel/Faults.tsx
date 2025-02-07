@@ -4,7 +4,7 @@ import React from 'react';
 const Faults: React.FunctionComponent = () => {
     return (
         <div className="p-1">
-           <div className='flex justify-between'>
+           <div className='flex gap-1 justify-between'>
                 <div className="text-xs text-blue-700 left-0 w-52"> 
                     Auto Read Fault Status
                     <Switch size='small'/>

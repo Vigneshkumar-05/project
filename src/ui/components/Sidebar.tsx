@@ -1,46 +1,51 @@
-import { Link } from "react-router-dom";
-import { sidebarTopItems, sidebarBottomItems } from "../config/SidebarItems";
+import React from "react";
+import { useState } from "react";
+import { routes, sidebarFunctions } from "../config/routes";
 
-type itemType = {
-  name: string;
-  icon: string;
-  tooltip: string;
-  action?: string;
-};
+type SidebarPropsType = {
+  activeTab: number;
+  setActiveTab: React.Dispatch<React.SetStateAction<number>>;
+}
 
-type SidebarItemsPropsType = {
-  items: itemType[];
-};
+const Sidebar: React.FC<SidebarPropsType> = ({ activeTab, setActiveTab }) => {
+  const [showSidebar, setShowSidebar] = useState(false);
 
-const SidebarItems: React.FunctionComponent<SidebarItemsPropsType> = ({
-  items,
-}) => {
   return (
-    <div className="h-full flex flex-col justify-around">
-      {items.map((value, index) => (
-        <Link to={value.action!} key={index}>
-          <button tabIndex={0} className="m-[10%] p-[17%] icon-container-style">
-            <img title={value.tooltip} src={value.icon} alt="" />
+    <aside className={`h-full flex flex-col justify-between items-center bg-white shadow-custom1 ${showSidebar && "relative w-[400%]"}`} >
+      <section className="h-[50%] w-[85%] flex flex-col justify-around">
+        {routes.map((value, index) => (
+          <button key={index} className="hover:bg-shadowGray rounded-md">
+            <div
+              className={`flex justify-between items-center p-1 text-2xl rounded-md ${value.name === "Disconnected"
+                ? "text-primaryRed"
+                : activeTab === index ? "text-lgBlue bg-blue-50" : "text-txGray"
+                }`}
+              onClick={() => setActiveTab(index)}
+            >
+              {React.createElement(value.icon)}
+              {showSidebar && <span className="text-xs">{value.name}</span>}
+            </div>
           </button>
-        </Link>
-      ))}
-    </div>
-  );
-};
+        ))}
+      </section>
 
-const Sidebar: React.FunctionComponent = () => {
-  return (
-    <aside className="h-full bg-white shadow-custom">
-      <div className="h-[95%] flex flex-col justify-between items-center">
-        <section className="h-[50%]">
-          <SidebarItems items={sidebarTopItems} />
-        </section>
-
-        <section className="h-[14%] flex flex-col justify-around">
-          <SidebarItems items={sidebarBottomItems} />
-        </section>
-      </div>
-    </aside>
+      <section className="h-[16%] w-[85%] flex flex-col justify-around">
+        {sidebarFunctions.map((value, index) => (
+          <button key={index} className="hover:bg-shadowGray rounded-md">
+            <div
+              className={`flex justify-between items-center p-2 text-2xl ${value.name === "Disconnected"
+                ? "text-primaryRed"
+                : "text-txGray"
+                } ${showSidebar && value.name !== "Disconnected" && "rotate-180"}`}
+              onClick={() => value.onClick(setShowSidebar)}
+            >
+              {React.createElement(value.icon)}
+              {showSidebar && value.name !== "Open sidebar" && <span className="text-xs">{value.name}</span>}
+            </div>
+          </button>
+        ))}
+      </section>
+    </aside >
   );
 };
 

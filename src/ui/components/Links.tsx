@@ -1,9 +1,9 @@
-import { FeatureList } from "../config/FeatureListItems";
+import { quicklinks } from "../config/links";
 
-const HomeFeaturesList: React.FunctionComponent = () => {
+const Links: React.FunctionComponent = () => {
   return (
     <div className="w-[55%] min-w-fit grid grid-rows-3 grid-cols-2 gap-[5%]">
-      {FeatureList.map((feature, index) => (
+      {quicklinks.map((feature, index) => (
         <div
           key={index}
           className={`p-5 flex items-center cursor-pointer bg-[#ffffff] rounded-sm featurelist-hover ${feature?.css}`}
@@ -18,4 +18,5 @@ const HomeFeaturesList: React.FunctionComponent = () => {
   );
 };
 
-export default HomeFeaturesList;
+export default Links;
+

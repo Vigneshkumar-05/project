@@ -1,5 +1,6 @@
 import { SetStateAction, useState } from "react";
 
+import Button from "../Button";
 import Input from "./Input";
 
 import { FaCircle } from "react-icons/fa";
@@ -36,18 +37,15 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
   };
 
   return (
-    // update required for handling drop down
-
-    <div className="py-3 w-[40%] grid grid-rows-5 grid-cols-[25%_1fr] gap-1 bg-[#ffffff] rounded-md shadow-custom">
+    <div className="py-3 w-[40%] grid grid-rows-5 grid-cols-[25%_1fr] gap-1 bg-white rounded-md shadow-custom1">
       <Input handleDropdown={handleDropdown} showDropdown={showDropdown} />
 
-      {/* Dropdown items */}
-      <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-gray-100 rounded-md">
+      <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-white rounded-md">
         {showDropdown &&
           ls.map((d, i) => (
             <div
               key={i}
-              className="p-2 cursor-pointer hover:bg-gray-200"
+              className="p-2 cursor-pointer hover:bg-shadowGray"
               onClick={() => {
                 handleDeviceSelection(i);
                 handleDropdown();
@@ -62,7 +60,7 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
         <FaCircle className=" text-red-400 text-3xl mr-[10%]" />
       </div>
 
-      <section className="h-full flex items-center text-gray-800">
+      <section className="h-full flex items-center text-gray-900">
         {deviceName != "" ? (
           <h1>{deviceName}</h1>
         ) : (
@@ -72,7 +70,7 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
 
       <br />
 
-      <section className="h-full max-w-[28ch] text-gray-400 text-xs font-semibold">
+      <section className="h-full max-w-[28ch] text-gray-400 text-xsm font-semibold">
         {deviceName != "" ? (
           <div className="h-full flex flex-col justify-around">
             <p>EVM Not Connected</p>
@@ -85,13 +83,13 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
 
       <div className="h-full flex justify-end items-center">
         {deviceName == "" && (
-          <IoWarningOutline className="text-red-700 mr-[10%]" />
+          <IoWarningOutline className="text-primaryRed mr-[10%]" />
         )}
       </div>
 
       <section className="h-full flex items-center">
         {deviceName == "" && (
-          <p className="text-red-700 text-xs">
+          <p className="text-primaryRed text-xsm">
             Select device from the dropdown.
           </p>
         )}
@@ -99,16 +97,17 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
 
       <section className="col-span-2 h-full flex justify-start items-center text-md">
         {deviceName != "" && (
-          <div className="h-[55%] w-[65%] flex justify-around">
-            <button
+          <div className="h-[68%] w-[72%] flex justify-around">
+            <Button
+              name={"Proceed"}
+              position={"primary"}
               onClick={() => setProceedStatus(true)}
-              className="px-[5%] text-sm  bg-[#c00] text-white rounded-sm"
-            >
-              Proceed
-            </button>
-            <button className="px-[6%] text-sm text-[#c00] rounded-sm border-[#c00] border-2">
-              Re-Scan
-            </button>
+            ></Button>
+            <Button
+              name={"Re-Scan"}
+              position={"secondary"}
+              onClick={() => { }}
+            ></Button>
           </div>
         )}
       </section>

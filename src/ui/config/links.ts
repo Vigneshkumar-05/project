@@ -5,7 +5,11 @@ import { RiFolderChartFill } from "react-icons/ri";
 import { GiSpanner } from "react-icons/gi";
 import { TbHelpHexagonFilled } from "react-icons/tb";
 
-const FeatureList = [
+import { PiSpinnerBallDuotone } from "react-icons/pi";
+import { IoMdSettings } from "react-icons/io";
+import { TbChartTreemap } from "react-icons/tb";
+
+const quicklinks = [
     {
         icon: FaUserCog,
         text: "User Guide",
@@ -39,4 +43,25 @@ const FeatureList = [
     },
 ];
 
-export { FeatureList };
+
+const nextSteps = [
+    {
+        icon: PiSpinnerBallDuotone,
+        text: "Quick Spin",
+    },
+    {
+        icon: IoMdSettings,
+        text: "Optimization Wizards",
+    },
+    {
+        icon: TbChartTreemap,
+        text: "Advanced Tuning",
+    },
+    {
+        icon: MdOutlineTune,
+        text: "Register Map",
+    }
+]
+
+
+export { quicklinks, nextSteps };

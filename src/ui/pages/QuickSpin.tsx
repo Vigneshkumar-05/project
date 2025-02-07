@@ -4,11 +4,11 @@ const QuickSpin: React.FunctionComponent = () => {
   return (
     <div className="flex justify-between">
       <div>
-          <p>quick spin</p>
+        <p>quick spin</p>
       </div>
 
       <div>
-      <RightPanel/>
+        <RightPanel/>
       </div>
     </div>
   );

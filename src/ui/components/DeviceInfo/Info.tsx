@@ -18,7 +18,7 @@ const Info: React.FunctionComponent = () => {
 
   useEffect(() => {
     if (deviceName === "") {
-      setCurrentSelectedDevice(info[0]);
+      setCurrentSelectedDevice(info[0]); // default about
     } else {
       info.forEach((data) => {
         if (deviceName === data.name) {

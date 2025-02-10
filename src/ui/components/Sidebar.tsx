@@ -1,13 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { routes, sidebarFunctions } from "../config/routes";
+import { useTabContext } from "../context/ActiveTabContext";
 
-type SidebarPropsType = {
-  activeTab: number;
-  setActiveTab: React.Dispatch<React.SetStateAction<number>>;
-}
 
-const Sidebar: React.FC<SidebarPropsType> = ({ activeTab, setActiveTab }) => {
+function Sidebar(): JSX.Element {
+  const { activeTab, setActiveTab } = useTabContext();
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
@@ -18,7 +16,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({ activeTab, setActiveTab }) => {
             <div
               className={`flex justify-between items-center p-1 text-2xl rounded-md ${value.name === "Disconnected"
                 ? "text-primaryRed"
-                : activeTab === index ? "text-lgBlue bg-blue-50" : "text-txGray"
+                : activeTab === index ? "text-lgBlue" : "text-txGray"
                 }`}
               onClick={() => setActiveTab(index)}
             >
@@ -45,7 +43,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({ activeTab, setActiveTab }) => {
           </button>
         ))}
       </section>
-    </aside >
+    </aside>
   );
 };
 

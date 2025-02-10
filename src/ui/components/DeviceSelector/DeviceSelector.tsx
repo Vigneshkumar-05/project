@@ -8,6 +8,7 @@ import { IoWarningOutline } from "react-icons/io5";
 import { useDeviceContext } from "../../context/DeviceContext";
 
 type DeviceSelectorPropsType = {
+  proceedStatus: boolean;
   setProceedStatus: React.Dispatch<SetStateAction<boolean>>;
 };
 
@@ -23,6 +24,7 @@ const ls = [
 ];
 
 const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
+  proceedStatus,
   setProceedStatus,
 }) => {
   const { deviceName, setDeviceName } = useDeviceContext();
@@ -102,11 +104,15 @@ const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
               name={"Proceed"}
               position={"primary"}
               onClick={() => setProceedStatus(true)}
+              disabled={proceedStatus}
             ></Button>
             <Button
               name={"Re-Scan"}
               position={"secondary"}
-              onClick={() => { }}
+              onClick={() => {
+                setDeviceName("");
+                setProceedStatus(false);
+              }}
             ></Button>
           </div>
         )}

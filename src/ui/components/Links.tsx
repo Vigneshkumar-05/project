@@ -1,20 +1,41 @@
-import { quicklinks } from "../config/links";
+import { quicklinks, nextSteps } from "../config/links";
+import { useTabContext } from "../context/ActiveTabContext";
 
-const Links: React.FunctionComponent = () => {
-  return (
-    <div className="w-[55%] min-w-fit grid grid-rows-3 grid-cols-2 gap-[5%]">
-      {quicklinks.map((feature, index) => (
+type LinksPropsType = {
+  proceedStatus: boolean;
+}
+
+function Links({ proceedStatus }: LinksPropsType): JSX.Element {
+  const { setActiveTab } = useTabContext();
+
+  return proceedStatus ? (
+    <section className="h-full w-full">
+      {nextSteps.map((data, index) => (
+        <div key={index} onClick={() => data.onClick(setActiveTab)} className=" bg-white my-4 h-[18%] w-[60%] flex items-center shadow-custom1 cursor-pointer transition-[box-shadow] ease-in-out duration-500 rounded-md hover:shadow-custom3">
+          <data.icon className="h-[40%] w-[20%] text-xl text-gray-600" />
+          <div className="h-[80%] w-full flex flex-col justify-around">
+            <p className="font-bold text-lgBlue">{data.text}</p>
+            <p className="text-xsm">{data.description}</p>
+          </div>
+        </div>
+      )
+      )}
+    </section>
+  ) : (
+    <section className="w-[55%] min-w-fit grid grid-rows-3 grid-cols-2 gap-[5%]">
+      {quicklinks.map((data, index) => (
         <div
           key={index}
-          className={`p-5 flex items-center cursor-pointer bg-[#ffffff] rounded-sm featurelist-hover ${feature?.css}`}
+          className={`p-5 flex items-center cursor-pointer bg-[#ffffff] rounded-sm featurelist-hover ${data?.css}`}
         >
-          <feature.icon className="h-full w-[30%] text-xl text-gray-600 icon " />
+          <data.icon className="h-full w-[30%] text-xl text-gray-600 icon " />
           <p className="h-full w-full text-center text-gray-700 whitespace-nowrap ">
-            {feature.text}
+            {data.text}
           </p>
         </div>
-      ))}
-    </div>
+      ))
+      }
+    </section >
   );
 };
 

@@ -9,6 +9,7 @@ import { PiSpinnerBallDuotone } from "react-icons/pi";
 import { IoMdSettings } from "react-icons/io";
 import { TbChartTreemap } from "react-icons/tb";
 
+
 const quicklinks = [
     {
         icon: FaUserCog,
@@ -43,23 +44,38 @@ const quicklinks = [
     },
 ];
 
-
 const nextSteps = [
     {
         icon: PiSpinnerBallDuotone,
         text: "Quick Spin",
+        description: "Get your motor spining in just few steps.",
+        onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {
+            setActiveTab(1);
+        },
     },
     {
         icon: IoMdSettings,
         text: "Optimization Wizards",
+        description: "Go here after your motor spin consistently.",
+        onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {
+            setActiveTab(2);
+        },
     },
     {
         icon: TbChartTreemap,
         text: "Advanced Tuning",
+        description: "Access all your control in one single page.",
+        onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {
+            setActiveTab(5);
+        },
     },
     {
         icon: MdOutlineTune,
         text: "Register Map",
+        description: "Full interactive device register map.",
+        onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {
+            setActiveTab(6);
+        },
     }
 ]
 

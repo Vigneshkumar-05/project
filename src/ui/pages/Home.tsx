@@ -15,9 +15,9 @@ const Home: React.FunctionComponent = () => {
       {!configure ? (
         <div className="max-h-full p-1 flex justify-between">
           <section className="max-h-full w-[50%] flex flex-col">
-            <DeviceSelector setProceedStatus={setProceedStatus} />
+            <DeviceSelector proceedStatus={proceedStatus} setProceedStatus={setProceedStatus} />
             <div className="mt-3 h-full flex items-start">
-              <Links />
+              <Links proceedStatus={proceedStatus} />
             </div>
           </section>
 

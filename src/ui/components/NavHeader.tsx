@@ -1,16 +1,14 @@
 import { useState, useRef, useEffect } from "react";
-import NavItems from "../config/NavItems";
+import { navigationRoutes } from "../config/routes";
+import { useDeviceContext } from "../context/DeviceContext";
 
-declare global {
-  interface Window {
-    navigationApi: {
-      openScriptWindow: () => void;
-    };
-  }
+type NavigationPropsType = {
+  notify: (message: string) => void;
 }
 
-const Navigation: React.FunctionComponent = () => {
+function Navigation({ notify }: NavigationPropsType): JSX.Element {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const { deviceName } = useDeviceContext();
   const dropdownRef = useRef(null);
 
   const handleDropdown = (value: number | null) => setActiveDropdown(value);
@@ -23,31 +21,34 @@ const Navigation: React.FunctionComponent = () => {
   });
 
   return (
-    <header className="flex items-center col-span-3 bg-[#c00] text-white">
+    <header className="flex items-center col-span-3 bg-primaryRed text-white">
       <div className="h-full mx-2 min-w-[10%] flex justify-center items-center text-xl font-bold">
         <h1 className="separator min-w-fit text-gray-100 whitespace-nowrap">
           Motor Studio
         </h1>
       </div>
-      <nav className="h-full ml-[1rem] min-w-[24rem] flex justify-between items-center text-xs">
-        {NavItems.map((value, index) => (
+
+      <nav className="h-full ml-[2%] min-w-[28%] flex justify-between items-center text-xsm">
+        {navigationRoutes.map((value, index) => (
           <div key={index}>
             <span
               className="cursor-pointer"
-              onClick={() => handleDropdown(index)}
+              onClick={() =>
+                deviceName === "" ? notify("Select device from dropdown") :
+                  handleDropdown(index)}
             >
               {value.name}
             </span>
 
             {activeDropdown === index && (
               <div
-                className="h-fit absolute top-10 flex flex-col bg-gray-100 text-gray-800 "
+                className="h-fit w-fit absolute top-10 flex flex-col bg-white text-black rounded-sm shadow-custom2"
                 ref={dropdownRef}
               >
                 {value.submenu.map((data, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 block cursor-pointer hover:bg-gray-200"
+                    className="px-4 py-2 cursor-pointer hover:bg-shadowGray rounded-sm"
                     onClick={() => {
                       data.action();
                       handleDropdown(index);
@@ -61,7 +62,7 @@ const Navigation: React.FunctionComponent = () => {
           </div>
         ))}
       </nav>
-    </header>
+    </header >
   );
 };
 

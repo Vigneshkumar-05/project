@@ -29,11 +29,10 @@ const RightPanel: React.FunctionComponent = () => {
           {["Controls", "Faults", "Charts", "Logs"].map((tab) => (
             <button
               key={tab}
-              className={`px-5 py-1 rounded-md text-sm font-medium ${
-                activeTab === tab
-                  ? "bg-white text-black"
-                  : "text-black bg-gray-100"
-              }`}
+              className={`px-5 py-1 rounded-md text-sm font-medium ${activeTab === tab
+                ? "bg-white text-black"
+                : "text-black bg-gray-100"
+                }`}
               onClick={() => setActiveTab(tab)}
             >
               {tab}

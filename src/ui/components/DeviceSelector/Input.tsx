@@ -1,5 +1,3 @@
-import React from "react";
-
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { useDeviceContext } from "../../context/DeviceContext";
@@ -9,10 +7,8 @@ type InputPropType = {
   showDropdown: boolean;
 };
 
-const Input: React.FunctionComponent<InputPropType> = ({
-  handleDropdown,
-  showDropdown,
-}) => {
+function Input({ handleDropdown, showDropdown, }: InputPropType): JSX.Element {
+
   const { deviceName, setDeviceName } = useDeviceContext();
 
   return (
@@ -40,9 +36,8 @@ const Input: React.FunctionComponent<InputPropType> = ({
           )}
 
           <button
-            className={`center transition-transform duration-500 ease-in-out ${
-              showDropdown ? "rotate-icon" : ""
-            }`}
+            className={`center transition-[transform] duration-500 ease-in-out 
+              ${showDropdown && "rotate-icon"}`}
             onClick={() => handleDropdown()}
           >
             <IoMdArrowDropdown className="text-xl text-gray-500 cursor-pointer icon-styles" />

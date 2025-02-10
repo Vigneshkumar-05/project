@@ -1,26 +1,39 @@
 import { useState } from "react";
 
 import DeviceSelector from "../components/DeviceSelector/DeviceSelector";
-import HomeFeaturesList from "../components/HomeFeaturesList";
-import About from "../components/About";
-import HardwareSetup from "../components/HardwareSetup";
+import Links from "../components/Links";
+import Info from "../components/DeviceInfo/Info";
+import HardwareSetup from "../components/DeviceInfo/HardwareSetup";
+import SetupOverview from "../components/DeviceInfo/SetupOverview";
 
-const Home: React.FunctionComponent = () => {
+
+function Home(): JSX.Element {
   const [proceedStatus, setProceedStatus] = useState(false);
+  const [configure, setConfigure] = useState(false);
 
   return (
-    <div className="h-full p-1 flex justify-between">
-      <section className="h-full w-[50%] flex flex-col">
-        <DeviceSelector setProceedStatus={setProceedStatus} />
-        <div className="h-[30%] flex items-end">
-          <HomeFeaturesList />
-        </div>
-      </section>
+    <>
+      {!configure ? (
+        <div className="max-h-full p-1 flex justify-between">
+          <section className="max-h-full w-[50%] flex flex-col">
+            <DeviceSelector proceedStatus={proceedStatus} setProceedStatus={setProceedStatus} />
+            <div className="mt-3 max-h-full flex items-start">
+              <Links proceedStatus={proceedStatus} />
+            </div>
+          </section>
 
-      <section className="h-full w-[50%] flex items-center">
-        {proceedStatus ? <HardwareSetup /> : <About />}
-      </section>
-    </div>
+          <section className="max-h-full w-[50%] flex items-center">
+            {proceedStatus ? (
+              <HardwareSetup setConfigure={setConfigure} />
+            ) : (
+              <Info />
+            )}
+          </section>
+        </div>
+      ) : (
+        <SetupOverview />
+      )}
+    </>
   );
 };
 

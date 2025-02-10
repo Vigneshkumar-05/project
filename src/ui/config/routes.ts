@@ -1,4 +1,80 @@
-const headerItems = [
+// Components
+import Home from "../pages/Home";
+import AdvancedTuning from "../pages/AdvancedTuning";
+import ClosedLoopTuning from "../pages/ClosedLoopTuning";
+import MPET from "../pages/MPET";
+import OptimizationWizards from "../pages/OptimizationWizards";
+import QuickSpin from "../pages/QuickSpin";
+import RegisterMap from "../pages/RegisterMap";
+
+// icons
+import { RiHome4Line } from "react-icons/ri";
+import { PiSpinnerBallDuotone } from "react-icons/pi";
+import { MdOutlineTune } from "react-icons/md";
+import { IoMdFootball } from "react-icons/io";
+import { MdInsertChartOutlined } from "react-icons/md";
+import { IoMdSettings } from "react-icons/io";
+import { TbChartTreemap } from "react-icons/tb";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { IoLinkSharp } from "react-icons/io5";
+
+
+const routes = [
+  {
+    icon: RiHome4Line,
+    name: "Home",
+    component: Home,
+  },
+  {
+    icon: PiSpinnerBallDuotone,
+    name: "Quick Spin",
+    component: QuickSpin,
+  },
+  {
+    icon: MdOutlineTune,
+    name: "Optimization Wizards",
+    component: OptimizationWizards,
+  },
+  {
+    icon: IoMdFootball,
+    name: "MPET",
+    component: MPET,
+  },
+  {
+    icon: MdInsertChartOutlined,
+    name: "Closed Loop Tuning",
+    component: ClosedLoopTuning,
+  },
+  {
+    icon: IoMdSettings,
+    name: "Advanced Tuning",
+    component: AdvancedTuning,
+  },
+  {
+    icon: TbChartTreemap,
+    name: "Register Map",
+    component: RegisterMap,
+  },
+];
+
+const sidebarFunctions = [
+  {
+    icon: MdOutlineKeyboardDoubleArrowRight,
+    name: "Open sidebar",
+    onClick: (setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>) => {
+      setShowSidebar((prev) => !prev);
+    }
+  },
+  {
+    icon: IoLinkSharp,
+    name: "Disconnected",
+    onClick: () => {
+      console.log("Disconnected clicked");
+    }
+  },
+];
+
+const navigationRoutes = [
   {
     name: "File",
     submenu: [
@@ -104,4 +180,5 @@ const headerItems = [
   },
 ];
 
-export default headerItems;
+
+export { routes, sidebarFunctions, navigationRoutes };

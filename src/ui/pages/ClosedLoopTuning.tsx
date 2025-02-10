@@ -1,6 +1,6 @@
 import RightPanel from "../components/RightPanel/RightPanel";
 
-const ClosedLoopTuning: React.FunctionComponent = () => {
+function ClosedLoopTuning(): JSX.Element {
   return (
     <div className="flex justify-between">
 
@@ -9,10 +9,11 @@ const ClosedLoopTuning: React.FunctionComponent = () => {
       </div>
 
       <div>
-        <RightPanel/>
+        <RightPanel />
       </div>
-      
+
     </div>
-  );};
+  );
+};
 
 export default ClosedLoopTuning;

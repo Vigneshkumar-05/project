@@ -1,6 +1,6 @@
 import RightPanel from "../components/RightPanel/RightPanel";
 
-const QuickSpin: React.FunctionComponent = () => {
+function QuickSpin(): JSX.Element {
   return (
     <div className="flex justify-between">
       <div>
@@ -8,10 +8,10 @@ const QuickSpin: React.FunctionComponent = () => {
       </div>
 
       <div>
-        <RightPanel/>
+        <RightPanel />
       </div>
     </div>
   );
-}; 
+};
 
 export default QuickSpin;

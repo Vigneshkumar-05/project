@@ -1,45 +1,58 @@
-import { Link } from "react-router-dom";
-import { sidebarTopItems, sidebarBottomItems } from "../config/SidebarItems";
+import { useState } from "react";
 
-type itemType = {
-  name: string;
-  icon: string;
-  tooltip: string;
-  action?: string;
-};
+import { routes, sidebarFunctions } from "../config/routes";
+import { useTabContext } from "../context/ActiveTabContext";
+import { useDeviceContext } from "../context/DeviceContext";
 
-type SidebarItemsPropsType = {
-  items: itemType[];
-};
+type SidebarPropsType = {
+  notify: (message: string) => void;
+}
 
-const SidebarItems: React.FunctionComponent<SidebarItemsPropsType> = ({
-  items,
-}) => {
+
+function Sidebar({ notify }: SidebarPropsType): JSX.Element {
+  const { activeTab, setActiveTab } = useTabContext();
+  const { deviceName } = useDeviceContext();
+  const [showSidebar, setShowSidebar] = useState(false);
+
   return (
-    <div className="h-full flex flex-col justify-around">
-      {items.map((value, index) => (
-        <Link to={value.action!} key={index}>
-          <button tabIndex={0} className="m-[10%] p-[17%] icon-container-style">
-            <img title={value.tooltip} src={value.icon} alt="" />
+    <aside className={`h-full flex flex-col justify-between items-center bg-white shadow-custom1 transition-all duration-500 ease-in-out ${showSidebar ? "relative w-[460%]" : "w-full"}`} >
+      <section className="h-[50%] w-[85%] flex flex-col justify-around" >
+        {routes.map((value, index) => (
+          <button key={index} className="hover:bg-shadowGray rounded-md">
+            <div
+              className={`p-2 w-full h-full flex items-center text-2xl space-x-3 rounded-md ${value.name === "Disconnected"
+                ? "text-primaryRed"
+                : activeTab === index ? "text-lgBlue" : "text-txGray"
+                } ${activeTab === index && showSidebar && "bg-blue-50"}`}
+              onClick={() =>
+                deviceName === "" ? notify("Select device from dropdown") : setActiveTab(index)}
+            >
+              <value.icon className={`${showSidebar && "w-[25%] h-full"}`} />
+              {showSidebar && <span className="w-full h-full flex items-center text-xs">{value.name}</span>}
+            </div>
           </button>
-        </Link>
-      ))}
-    </div>
-  );
-};
+        ))}
+      </section>
 
-const Sidebar: React.FunctionComponent = () => {
-  return (
-    <aside className="h-full bg-white shadow-custom">
-      <div className="h-[95%] flex flex-col justify-between items-center">
-        <section className="h-[50%]">
-          <SidebarItems items={sidebarTopItems} />
-        </section>
+      <section className="h-[16%] w-[85%] flex flex-col justify-around">
+        {sidebarFunctions.map((value, index) => (
+          <button key={index} className="hover:bg-shadowGray rounded-md">
+            <div
+              className={`flex justify-between items-center p-2 text-2xl ${value.name === "Disconnected"
+                ? "text-primaryRed"
+                : "text-txGray"
+                } ${showSidebar && value.name !== "Disconnected" && "rotate-180"}`}
+              onClick={() =>
+                value.onClick(setShowSidebar)
+              }
+            >
+              <value.icon />
+              {showSidebar && value.name !== "Open sidebar" && <span className="text-xs">{value.name}</span>}
+            </div>
+          </button>
+        ))}
+      </section>
 
-        <section className="h-[14%] flex flex-col justify-around">
-          <SidebarItems items={sidebarBottomItems} />
-        </section>
-      </div>
     </aside>
   );
 };

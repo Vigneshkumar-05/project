@@ -1,5 +1,3 @@
-import React from "react";
-
 type ButtonPropsType = {
   name: string;
   onClick: () => void;
@@ -7,12 +5,7 @@ type ButtonPropsType = {
   disabled?: boolean;
 };
 
-const Button: React.FC<ButtonPropsType> = ({
-  name,
-  onClick,
-  position,
-  disabled,
-}) => {
+function Button({ name, onClick, position, disabled }: ButtonPropsType): JSX.Element {
   return (
     <button
       className={`${position === "primary"

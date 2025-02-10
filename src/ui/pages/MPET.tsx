@@ -1,6 +1,6 @@
 import RightPanel from "../components/RightPanel/RightPanel";
 
-const MPET: React.FunctionComponent = () => {
+function MPET(): JSX.Element {
   return (
     <div className="flex justify-between">
 
@@ -9,9 +9,9 @@ const MPET: React.FunctionComponent = () => {
       </div>
 
       <div>
-        <RightPanel/>
+        <RightPanel />
       </div>
-      
+
     </div>
   );
 };

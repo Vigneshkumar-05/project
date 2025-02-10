@@ -1,18 +1,19 @@
 import React from "react";
+
 import Button from "../Button";
-import image from "../../assets/images/EVM.png";
 import deviceSetup from "../../config/setup";
+
+import image from "../../assets/images/EVM.png";
 
 type HardwareSetupPropsType = {
   setConfigure: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const HardwareSetup: React.FC<HardwareSetupPropsType> = ({
-  setConfigure,
-}) => {
+function HardwareSetup({ setConfigure }: HardwareSetupPropsType): JSX.Element {
+
   return (
     <div className="py-2 h-[99%] flex flex-col justify-between bg-white shadow-lg rounded-md">
-      <header className="text-lg font-bold">
+      <header className="font-bold text-lg">
         <p className="px-2 custom-underline">Hardware Setup</p>
       </header>
 
@@ -25,7 +26,7 @@ const HardwareSetup: React.FC<HardwareSetupPropsType> = ({
         />
       </section>
 
-      <section className="h-[300px] w-full overflow-auto">
+      <section className="max-h-[300px] w-full overflow-auto">
         {deviceSetup[0].footer.map((data, index) => (
           <p
             key={index}
@@ -36,7 +37,7 @@ const HardwareSetup: React.FC<HardwareSetupPropsType> = ({
         ))}
       </section>
 
-      <footer className="h-14 w-full md:w-[60%] flex justify-between items-center">
+      <footer className="h-14 md:w-[60%] w-full  flex justify-between items-center">
         <div className="w-[65%] flex justify-around items-center">
           <input type="checkbox" className="w-8 h-5 accent-lgBlue" />
           <p className="text-lgBlue text-sm">

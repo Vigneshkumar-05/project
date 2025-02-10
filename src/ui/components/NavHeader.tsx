@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { navigationRoutes } from "../config/routes";
 
-const Navigation: React.FunctionComponent = () => {
+function Navigation(): JSX.Element {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const dropdownRef = useRef(null);
 

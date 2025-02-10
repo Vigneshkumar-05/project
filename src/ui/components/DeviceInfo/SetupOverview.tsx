@@ -1,8 +1,7 @@
-import React from "react";
 import RightPanel from "../RightPanel/RightPanel";
 import image from "../../assets/images/EVM.png";
 
-const SetupOverview: React.FunctionComponent = () => {
+function SetupOverview(): JSX.Element {
   return (
     <div className="h-full w-full flex justify-between">
       <section className="w-[90%] h-[90%]">

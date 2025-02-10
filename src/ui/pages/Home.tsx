@@ -6,7 +6,7 @@ import Info from "../components/DeviceInfo/Info";
 import HardwareSetup from "../components/DeviceInfo/HardwareSetup";
 import SetupOverview from "../components/DeviceInfo/SetupOverview";
 
-const Home: React.FunctionComponent = () => {
+function Home(): JSX.Element {
   const [proceedStatus, setProceedStatus] = useState(false);
   const [configure, setConfigure] = useState(false);
 
@@ -16,7 +16,7 @@ const Home: React.FunctionComponent = () => {
         <div className="max-h-full p-1 flex justify-between">
           <section className="max-h-full w-[50%] flex flex-col">
             <DeviceSelector proceedStatus={proceedStatus} setProceedStatus={setProceedStatus} />
-            <div className="mt-3 h-full flex items-start">
+            <div className="mt-3 max-h-full flex items-start">
               <Links proceedStatus={proceedStatus} />
             </div>
           </section>

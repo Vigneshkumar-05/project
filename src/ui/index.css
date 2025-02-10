@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@layer components {
+    .center {
+        @apply flex justify-center items-center;
+    }
 }
 
 /* Vertical separator */

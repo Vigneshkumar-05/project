@@ -11,7 +11,7 @@ type currentSelectedDeviceType = {
   footer: string;
 };
 
-const Info: React.FunctionComponent = () => {
+function Info(): JSX.Element {
   const { deviceName } = useDeviceContext();
   const [currentSelectedDevice, setCurrentSelectedDevice] =
     useState<currentSelectedDeviceType>(info[0]);

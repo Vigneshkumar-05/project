@@ -23,18 +23,15 @@ const ls = [
   "MCF8315D",
 ];
 
-const DeviceSelector: React.FunctionComponent<DeviceSelectorPropsType> = ({
-  proceedStatus,
-  setProceedStatus,
-}) => {
+function DeviceSelector({ proceedStatus, setProceedStatus }: DeviceSelectorPropsType) {
   const { deviceName, setDeviceName } = useDeviceContext();
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleDropdown = () => {
+  function handleDropdown(): void {
     setShowDropdown((prevState) => !prevState);
   };
 
-  const handleDeviceSelection = (i: number) => {
+  function handleDeviceSelection(i: number): void {
     setDeviceName(ls[i]);
   };
 

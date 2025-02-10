@@ -1,5 +1,5 @@
-import React from "react";
 import { useState } from "react";
+
 import { routes, sidebarFunctions } from "../config/routes";
 import { useTabContext } from "../context/ActiveTabContext";
 
@@ -9,19 +9,19 @@ function Sidebar(): JSX.Element {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <aside className={`h-full flex flex-col justify-between items-center bg-white shadow-custom1 ${showSidebar && "relative w-[400%]"}`} >
-      <section className="h-[50%] w-[85%] flex flex-col justify-around">
+    <aside className={`w-full h-full flex flex-col justify-between items-center bg-white shadow-custom1 transition-[width] duration-500 ease-in-out ${showSidebar && "relative w-[450%]"}`} >
+      <section className="h-[50%] w-[85%] flex flex-col justify-around" >
         {routes.map((value, index) => (
           <button key={index} className="hover:bg-shadowGray rounded-md">
             <div
-              className={`flex justify-between items-center p-1 text-2xl rounded-md ${value.name === "Disconnected"
+              className={`p-2 w-full h-full flex items-center text-2xl space-x-3 rounded-md ${value.name === "Disconnected"
                 ? "text-primaryRed"
                 : activeTab === index ? "text-lgBlue" : "text-txGray"
-                }`}
+                } ${activeTab === index && showSidebar && "bg-blue-50"}`}
               onClick={() => setActiveTab(index)}
             >
-              {React.createElement(value.icon)}
-              {showSidebar && <span className="text-xs">{value.name}</span>}
+              <value.icon className={`${showSidebar && "w-[25%] h-full"}`} />
+              {showSidebar && <span className="w-full h-full flex items-center text-xs">{value.name}</span>}
             </div>
           </button>
         ))}
@@ -37,7 +37,7 @@ function Sidebar(): JSX.Element {
                 } ${showSidebar && value.name !== "Disconnected" && "rotate-180"}`}
               onClick={() => value.onClick(setShowSidebar)}
             >
-              {React.createElement(value.icon)}
+              <value.icon />
               {showSidebar && value.name !== "Open sidebar" && <span className="text-xs">{value.name}</span>}
             </div>
           </button>

@@ -11,7 +11,7 @@ function Links({ proceedStatus }: LinksPropsType): JSX.Element {
   return proceedStatus ? (
     <section className="h-full w-full">
       {nextSteps.map((data, index) => (
-        <div key={index} onClick={() => data.onClick(setActiveTab)} className=" bg-white my-4 h-[18%] w-[60%] flex items-center shadow-custom1 cursor-pointer transition-[box-shadow] ease-in-out duration-500 rounded-md hover:shadow-custom3">
+        <div key={index} onClick={() => data.onClick(setActiveTab)} className=" bg-white mx-1 my-4 h-[24%] w-[60%] flex items-center shadow-custom1 cursor-pointer transition-[box-shadow] ease-in-out duration-500 rounded-md hover:shadow-custom3">
           <data.icon className="h-[40%] w-[20%] text-xl text-gray-600" />
           <div className="h-[80%] w-full flex flex-col justify-around">
             <p className="font-bold text-lgBlue">{data.text}</p>

@@ -1,8 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import { navigationRoutes } from "../config/routes";
+import { useDeviceContext } from "../context/DeviceContext";
 
-function Navigation(): JSX.Element {
+type NavigationPropsType = {
+  notify: (message: string) => void;
+}
+
+function Navigation({ notify }: NavigationPropsType): JSX.Element {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const { deviceName } = useDeviceContext();
   const dropdownRef = useRef(null);
 
   const handleDropdown = (value: number | null) => setActiveDropdown(value);
@@ -27,7 +33,9 @@ function Navigation(): JSX.Element {
           <div key={index}>
             <span
               className="cursor-pointer"
-              onClick={() => handleDropdown(index)}
+              onClick={() =>
+                deviceName === "" ? notify("Select device from dropdown") :
+                  handleDropdown(index)}
             >
               {value.name}
             </span>
@@ -54,7 +62,7 @@ function Navigation(): JSX.Element {
           </div>
         ))}
       </nav>
-    </header>
+    </header >
   );
 };
 

@@ -54,7 +54,7 @@ const nextSteps = [
         },
     },
     {
-        icon: IoMdSettings,
+        icon: MdOutlineTune,
         text: "Optimization Wizards",
         description: "Go here after your motor spin consistently.",
         onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {
@@ -62,7 +62,7 @@ const nextSteps = [
         },
     },
     {
-        icon: TbChartTreemap,
+        icon: IoMdSettings,
         text: "Advanced Tuning",
         description: "Access all your control in one single page.",
         onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {
@@ -70,7 +70,7 @@ const nextSteps = [
         },
     },
     {
-        icon: MdOutlineTune,
+        icon: TbChartTreemap,
         text: "Register Map",
         description: "Full interactive device register map.",
         onClick: (setActiveTab: React.Dispatch<React.SetStateAction<number>>) => {

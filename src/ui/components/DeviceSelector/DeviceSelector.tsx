@@ -39,7 +39,7 @@ function DeviceSelector({ proceedStatus, setProceedStatus }: DeviceSelectorProps
     <div className="py-3 w-[40%] grid grid-rows-5 grid-cols-[25%_1fr] gap-1 bg-white rounded-md shadow-custom1">
       <Input handleDropdown={handleDropdown} showDropdown={showDropdown} />
 
-      <div className="absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-white rounded-md">
+      <div className={`absolute top-[7.5rem] left-[4.2rem] w-[16.5%] text-black text-start bg-white rounded-md ${showDropdown && 'shadow-custom2'}`}>
         {showDropdown &&
           ls.map((d, i) => (
             <div
@@ -114,6 +114,7 @@ function DeviceSelector({ proceedStatus, setProceedStatus }: DeviceSelectorProps
           </div>
         )}
       </section>
+
     </div>
   );
 };

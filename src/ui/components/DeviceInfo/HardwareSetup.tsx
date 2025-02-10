@@ -26,7 +26,7 @@ function HardwareSetup({ setConfigure }: HardwareSetupPropsType): JSX.Element {
         />
       </section>
 
-      <section className="max-h-[300px] w-full overflow-auto">
+      <section className="h-[300px] w-full overflow-auto">
         {deviceSetup[0].footer.map((data, index) => (
           <p
             key={index}

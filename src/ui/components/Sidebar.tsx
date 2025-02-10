@@ -2,14 +2,20 @@ import { useState } from "react";
 
 import { routes, sidebarFunctions } from "../config/routes";
 import { useTabContext } from "../context/ActiveTabContext";
+import { useDeviceContext } from "../context/DeviceContext";
+
+type SidebarPropsType = {
+  notify: (message: string) => void;
+}
 
 
-function Sidebar(): JSX.Element {
+function Sidebar({ notify }: SidebarPropsType): JSX.Element {
   const { activeTab, setActiveTab } = useTabContext();
+  const { deviceName } = useDeviceContext();
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <aside className={`w-full h-full flex flex-col justify-between items-center bg-white shadow-custom1 transition-[width] duration-500 ease-in-out ${showSidebar && "relative w-[450%]"}`} >
+    <aside className={`h-full flex flex-col justify-between items-center bg-white shadow-custom1 transition-all duration-500 ease-in-out ${showSidebar ? "relative w-[460%]" : "w-full"}`} >
       <section className="h-[50%] w-[85%] flex flex-col justify-around" >
         {routes.map((value, index) => (
           <button key={index} className="hover:bg-shadowGray rounded-md">
@@ -18,7 +24,8 @@ function Sidebar(): JSX.Element {
                 ? "text-primaryRed"
                 : activeTab === index ? "text-lgBlue" : "text-txGray"
                 } ${activeTab === index && showSidebar && "bg-blue-50"}`}
-              onClick={() => setActiveTab(index)}
+              onClick={() =>
+                deviceName === "" ? notify("Select device from dropdown") : setActiveTab(index)}
             >
               <value.icon className={`${showSidebar && "w-[25%] h-full"}`} />
               {showSidebar && <span className="w-full h-full flex items-center text-xs">{value.name}</span>}
@@ -35,7 +42,9 @@ function Sidebar(): JSX.Element {
                 ? "text-primaryRed"
                 : "text-txGray"
                 } ${showSidebar && value.name !== "Disconnected" && "rotate-180"}`}
-              onClick={() => value.onClick(setShowSidebar)}
+              onClick={() =>
+                value.onClick(setShowSidebar)
+              }
             >
               <value.icon />
               {showSidebar && value.name !== "Open sidebar" && <span className="text-xs">{value.name}</span>}
@@ -43,6 +52,7 @@ function Sidebar(): JSX.Element {
           </button>
         ))}
       </section>
+
     </aside>
   );
 };

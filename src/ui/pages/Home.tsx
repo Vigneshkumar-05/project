@@ -6,6 +6,7 @@ import Info from "../components/DeviceInfo/Info";
 import HardwareSetup from "../components/DeviceInfo/HardwareSetup";
 import SetupOverview from "../components/DeviceInfo/SetupOverview";
 
+
 function Home(): JSX.Element {
   const [proceedStatus, setProceedStatus] = useState(false);
   const [configure, setConfigure] = useState(false);

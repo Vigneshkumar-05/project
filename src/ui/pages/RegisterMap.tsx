@@ -1,6 +1,6 @@
 import RightPanel from "../components/RightPanel/RightPanel";
 
-const RegisterMap: React.FunctionComponent = () => {
+function RegisterMap(): JSX.Element {
   return (
     <div className="flex justify-between">
 
@@ -9,9 +9,9 @@ const RegisterMap: React.FunctionComponent = () => {
       </div>
 
       <div>
-        <RightPanel/>
+        <RightPanel />
       </div>
-      
+
     </div>
   );
 };

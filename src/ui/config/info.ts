@@ -1,6 +1,6 @@
 import image from "../assets/icons/KnowYourDevice.svg"
 
-const about = [
+const info = [
     {
         header: "About Us",
         name: "Texas instrumentation",
@@ -51,4 +51,4 @@ const about = [
     }
 ];
 
-export default about;
+export default info;

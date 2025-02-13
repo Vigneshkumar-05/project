@@ -1,6 +1,6 @@
 import RightPanel from "../components/RightPanel/RightPanel";
 
-const AdvancedTuning: React.FunctionComponent = () => {
+function AdvancedTuning(): JSX.Element {
   return (
     <div className="flex justify-between">
 
@@ -9,9 +9,9 @@ const AdvancedTuning: React.FunctionComponent = () => {
       </div>
 
       <div>
-        <RightPanel/>
+        <RightPanel />
       </div>
-      
+
     </div>
   );
 };

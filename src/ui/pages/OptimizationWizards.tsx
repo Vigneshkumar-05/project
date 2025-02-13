@@ -1,6 +1,6 @@
 import RightPanel from "../components/RightPanel/RightPanel";
 
-const OptimizationWizards: React.FunctionComponent = () => {
+function OptimizationWizards(): JSX.Element {
   return (
     <div className="flex justify-between">
 
@@ -9,9 +9,9 @@ const OptimizationWizards: React.FunctionComponent = () => {
       </div>
 
       <div>
-        <RightPanel/>
+        <RightPanel />
       </div>
-      
+
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Controls: React.FunctionComponent = () => {
             <h2 className="text-md font-bold mb-2">I2C CONTROLS</h2>
             <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-medium">Speed Control via I2C</span>
-                <div className="px-3 py-1 text-xs text-gray-800  rounded-full flex">
+                <div className="px-3 py-1 text-xs text-gray-800  rounded-full flex gap-1">
                   <Switch size='small'/>
                   <p>Disabled</p>
                 </div>
@@ -42,7 +42,7 @@ const Controls: React.FunctionComponent = () => {
         <div className="border px-2 py-2 rounded-md mt-2">
             <div className="flex items-center justify-between mb-2">
                 <h2 className="text-md font-bold">MOTOR STATUS</h2>
-                <div className="px-3 py-1 text-xs font-small text-gray-400 rounded-full">
+                <div className="px-3 py-1 text-xs font-small text-gray-400 rounded-full flex gap-1">
                   <Switch size='small'/>
                   <p>Disable</p>
                 </div>

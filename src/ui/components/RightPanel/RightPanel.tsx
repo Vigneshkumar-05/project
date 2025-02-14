@@ -30,12 +30,8 @@ const RightPanel: React.FunctionComponent = () => {
         <div className="w-0.5 bg-gray-300 flex justify-center"> </div>
           <div className="align-bottom items-baseline">
             <button
-              key={tab}
-              className={`px-5 py-1 rounded-md text-sm font-medium ${activeTab === tab
-                ? "bg-white text-black"
-                : "text-black bg-gray-100"
-                }`}
-              onClick={() => setActiveTab(tab)}
+              className="flex items-center justify-center w-6 h-6 rounded-full border border-gray-100 bg-white shadow-sm"
+              onClick={() => setIsExpanded(!isExpanded)}
             >
               {isExpanded ? <AiOutlineLeft /> : <AiOutlineRight /> }
             </button>
